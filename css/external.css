@@ -1,0 +1,23 @@
+/* Nav Bar */
+.navbar-brand { 
+    font-family: Federo;
+    font-size: 25pt;
+}
+.nav-item { font-family: Helvetica Neue; }
+
+/* About Snippet */
+span.rotate
+{
+    font-family: Cormorant Garamond;
+}
+
+/* Footer */
+a.btn.btn-secondary {
+    border:none;
+    background: none;
+    color:black;
+}
+
+p.text-center.text-muted a {
+    font-family: Federo;
+}
