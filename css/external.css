@@ -6,9 +6,20 @@
 .nav-item { font-family: Helvetica Neue; }
 
 /* About Snippet */
-span.rotate
+span.rotate, .subheader
 {
     font-family: Cormorant Garamond;
+}
+
+/* Default Header Font */
+.header {
+    font-family: Federo;
+}
+
+/* Default Primary Button */
+a.btn.btn-primary {
+    background-color:black;
+    border:none;
 }
 
 /* Footer */
