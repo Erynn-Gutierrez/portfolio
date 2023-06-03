@@ -1,69 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/external.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
-    <title>Erynn Gutierrez | Identity</title>
-    <style>
-        .brief {
-            display:inline-block;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/external.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
+  <title>Erynn Gutierrez | Second Chance</title>
+  <style>
+    .brief {
+      display: inline-block;
+    }
+
+    section {padding-bottom: 5em; }
+
+    #scrollspy {
+        position:fixed;
+        /* top:50%; */
+        right:0;
+        text-align:right;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 576px) {
+      .this {
+        order: 1;
+      }
+
+      .that {
+        order: 2;
+        text-align: center;
+      }
+    }
+    @media (max-width: 758px) {
+
+      #scrollspy {
+        visibility:hidden;
+      }
+
+    }
+
+    .comp-img {
+      width: 75%;
+      height: auto;
+    }
+
+    #scrollspy {
+        font-size: 10pt;
+    }
+
+    .nav-link {color:black;}
+
+    .caption {font-size: 9pt;}
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 100
+    })
+</script>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#home">ERYNN GUTIERREZ</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+<!-- Nav Bar goes here -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">ERYNN GUTIERREZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="identity">Identity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Scrollspy -->
+  <div class="container whole">
+    <div class="row">
+      <div class="col-auto">
+        <div id="scrollspy">
+          <ul class="nav flex-column" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0">
+            <li class="nav-item">
+              <a class="nav-link" href="#second-chance">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#research-ideation">Research & Ideation</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="identity">Identity</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#connect">Connect</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-problems">The Problems</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-goal">The Goal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#competitor-analysis">Competitor Analysis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#user-analysis">User Analysis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#design-implementation">Design & Implementation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#specification">Specification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prototyping">Prototyping</a>
+          </li>
+          </ul>
         </div>
-      </nav>
-<main>
-    <!-- Introduction -->
-    <section>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
-            <div class="col-md-9 my-2">
-                <div class="fw-normal">
-                    <h1 class="display-1 header">SECOND CHANCE</h1>
-                </div>
-                <h3 class="subheader fw-normal text-right">
-                    Empowering ethical shopping with sustainable alternatives 
-                    and personalized recommendations.
-                </h3>
-            </div>
-            <br>
-
-            <div class="container">
+      </div>
+      <div class="container">
+        <section>
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+              <div class="col-md-12 my-2">
+                  <div class="fw-normal">
+                      <h1 class="display-1 header">SECOND CHANCE</h1>
+                  </div>
+                  <h3 class="subheader fw-normal text-right">
+                      Empowering ethical shopping with sustainable alternatives 
+                      and personalized recommendations.
+                  </h3>
+              </div>
+            </br>
+            </br>
+            </br>
+  
+              <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="img/second-chance1.png" alt="Second Chance" class="img-fluid">
+                    <div class="col-12 col-md-6 order-md-1">
+                      <a href="img/second-chance1.png" data-lightbox="second-chance1">
+                        <img src="img/second-chance1.png" alt="second-chance-prototype" class="img-fluid">
+                      </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 order-md-2 that">
                         <div class="row">
                             <div class="col-12">
                                 <p class="text-end">
@@ -95,12 +185,289 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+      </section>
 
-</main>
-<!-- Footer -->
+      <!-- Research and Ideation -->
+          <div class="row mx-auto" id="research-ideation"></div>
+              <h2 class="header text-center">RESEARCH & IDEATION</h2>
+                <section id="the-problems">
+                    <div class="col-9 text-start mx-auto">
+                <h5>The Problems</h5>
+                <p>
+                    Current fast fashion websites prioritize affordability and style,
+                     leaving users unaware of the environmental and ethical 
+                     impact of their purchases. The lack of easily accessible 
+                     information and alternatives hinders consumers from making 
+                     informed choices that align with their values. Further, the
+                      time-consuming process of manually researching sustainability 
+                     credentials or searching for alternative options discourages 
+                    users from adopting more sustainable shopping habits.
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <div class= "col-4 text-start">
+                    <h6 class="text-center">Fashion Transparency Index Scores of Top Global Fast Fashion Retailers, 2022</h6>
+                    <a href="img/transparency.png" data-lightbox="Fashion Transparency" data-title="Fashion Transparency Index Scores of Top Global Fast Fashion Retailers, 2022">
+                      <img src="img/transparency.png" alt="transparency" class="img-fluid">
+                    </a>
+                    <p class="caption">Sources: Fashion Revolution, Statista</p>
+                </div>
+                <div class= "col-4 text-start">
+                    <h6 class="text-center">Average Advertised Womenswear Prices at U.S. Fast Fashion Retailers, 2022</h6>
+                    <a href="img/prices.png" data-lightbox="Womenswear Prices" data-title="Average Advertised Womenswear Prices at U.S. Fast Fashion Retailers, 2022">
+                      <img src="img/prices.png" alt="prices" class="img-fluid">
+                    </a>
+                    <p class="caption">Sources: Fortune, Statista</p>
+                </div>
+              </div>
+                </section>
+            <!-- The Goal -->
+            <section id="the-goal">
+                <div class="row">
+                    <div class="col-9 text-start mx-auto">
+                    <h5>The Goal</h5>
+                    <p> We aim to empower online shoppers to make sustainable 
+                        and ethical choices by providing them with real-time 
+                        alternative clothing options while they browse fast fashion websites.
+                        We aim to raise awareness about the detrimental environmental and 
+                        ethical impacts of fast fashion and enable users to 
+                        easily access data on sustainability, carbon footprint,
+                         ethical sourcing, pricing, and sizing for alternative garments.
+                    </p>
+                    <br><br>
+                    <p class="lead text-center">
+                        We wanted to create an environment where shoppers
+                        don't have to sacrifice affordability and style while
+                        educating them on the changes they can make by
+                        supporting secondhand and sustainable fashion.
+                    </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competitor-analysis">
+              <div class="row">
+              <div class="col-9 text-start mx-auto">
+              <h5>Competitor Analysis</h5>
+              <p>
+                Our team looked at direct competitors with fashion-focused 
+                programming, such as Good on You and Ethical Shopper, as 
+                well as indirect competitors with focuses on overall 
+                sustainable shopping, like The Beagle Button.
+              </p>
+            </div>
+            </div>
+            <div class="col-4 d-flex mx-auto comp-img">
+              <a href="img/competitive-analysis.png" data-lightbox="Competitive Analysis">
+                <img src="img/competitive-analysis.png" alt="competitive-analysis" class="img-fluid">
+              </a>
+            </div>
+            <br>
+            <div class="col-9 text-start mx-auto">
+                <p>
+                    We found that these extensions either focused solely on 
+                    providing sustainability ratings OR sustainable alternatives.
+                    There was an opportunity to develop an extension that 
+                    combines these elements, that compares and rates similar 
+                    fashion items based on features such as sustainability, 
+                    ethical sourcing, and pricing.
+                  </p>
+            </div>
+            </section>
+
+            <!-- User Analysis -->
+            <section id="user-analysis">
+                <div class="container">
+                    <div class="col-9 text-start mx-auto">
+                        <h5 class="mx-auto">User Analysis</h5>
+                        <p>
+                            After synthesizing our findings, we created 2 user 
+                            personas and scenarios to support clear communication
+                             during the design process. The 2 archetypes we 
+                             identified were the shopper who valued sustainable 
+                             brand practices, and the shoppers who valued low prices
+                             in their shopping experience.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 text-start my-auto">
+                                <img src="img/conscious-chiara.png" alt="conscience-chiara" class="w-75">
+                            </div>
+                            <div class="col">
+                                <h6>Conscious Chiara</h6>
+                                <p>
+                                    Chiara is a college-educated 24-year-old technical sales representative based out of Boston, MA. During her free time, she likes to thrift. Thrifting is easy on her pockets and is good for her conscience, as she is opposed to fast fashion. Lately, however, she has been seeing advertisements for particular seasonal garments that she really likes from fast fashion brands. She views these garments on fast fashion sites and does a parallel search for similar items on thrifting sites, but consistently comes up short despite hours of searching. She does not like going through this arduous process and wishes that there was a way to quickly search multiple sites at once for the kind of clothing items that she is looking for. 
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4 text-start my-auto">
+                                <img src="img/frugal-fiona.png" alt="frugal-fiona" class="w-75">
+                            </div>
+                            <div class="col">
+                                <!-- <h6>GEN Z</h6>
+                                <br> -->
+                                <h6>Frugal Fiona</h6>
+                                <p>
+                                    Fiona is a long-time office receptionist at a local Maryland paper company.  She enjoys couponing and loves a good deal.  As a mother of 4, most of her salary goes towards funding her children, which is why she does not have a lot of time to herself, and barely any spare money to purchase the things she wants. Though Fiona still dreams of wearing the clothes her higher-ups and co-workers wear, from Ann Taylor blouses to Banana Republic dress pants to Vince Camuto pumps. She wishes that there was a way for her to afford these brands as well as have a purchasing process that does not take more time out of her long days.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <br>
+                                <p class="lead">Pain Points</p>
+                                <p>
+                                We pinpointed four re-occurring user pain points
+                                 when finding and working within our proposed
+                                 framework:
+                                <br><br>
+                                <strong>Time</strong> - Online shoppers spend hours searching online for the perfect item, but frequently arrive at dead ends.
+                                <br>
+                                <strong>Relevance</strong> - Fashion-forward consumers enjoy following trends seen from fast fashion brands, but cannot find an equivalent on thrifting sites or in thrifting stores (out of season).
+                                <br>
+                                <strong>Affordability</strong> - Fashion-forward consumers often come across desired clothing that is out of budget
+                                <br>
+                                <strong>Ease of Use</strong> - Online purchasing processes are a hassle, and often indirect. 
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <!-- End of User Analysis -->
+
+            <!-- Design & Implementation -->
+            <div class="row mx-auto" id="design-implementation"></div>
+            <section>
+                <h2 class="header text-center">DESIGN & IMPLEMENTATION</h2>
+            <div class="col-9 text-start mx-auto">
+                <h5 class="mx-auto" id="specification">Specification</h5>
+                <p>
+                    Utilizing the top-down design approach developed by Foley 
+                    and van Dam and further researched by our Professor, <a href="http://www.cs.tufts.edu/~jacob/papers/cacm.pdf">Robert Jacob</a>,
+                     our team defined the actions, objects of our system, as 
+                    well as their meanings, how they're connected, how the user
+                    interacts with them, and address further design considerations.
+                </p>
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFksm3Do2E&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                    </div>
+                </div>
+                </section>
+
+              <!-- Prototyping -->
+              <section>
+                <div class="row mx-auto" id="design-implementation">
+                <div class="col-9 text-start mx-auto">
+                  <h5 class="mx-auto" id="prototyping">Prototyping</h5>
+                    <p>
+                      With our design specification completed, we were able to
+                      head into our prototyping phase with a concrete idea of
+                      our priorities and outcomes.
+                    </p>
+                    <p class="lead">Paper Prototype</p>
+                  <div class="row">
+                    <div class="col d-flex">
+                      <a href="img/paper1.png" data-lightbox="Paper Prototype 1">
+                        <img src="img/paper1.png" alt="Paper Prototype 1" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col d-flex">
+                      <a href="img/paper2.png" data-lightbox="Paper Prototype 2">
+                        <img src="img/paper2.png" alt="Paper Prototype 2" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col">
+                    <p>
+                      After looking at our first prototype for the recommendation tab, we faced the challenge of defining what a bookmarked item is. We had to figure out whether or not we wanted to localize this system with the app’s provided matches, or on top of this localized system, include an external “liked” tab for retail sites to influence the user’s recommendation attributes. <br><br> However, we found that this overlap would be confusing, and decided to not offer an external like button on regular retail sites, and change the Bookmarked section into a “Likes” section for localized matches. In terms of influencing the Recommendation tab, we decided to also localize the results under this tab based on their liked items, and treat this section akin to a feed of miscellaneous recommendations based on the attributes of items they have liked.
+                    </p>
+                  </div>
+                  <p class="lead" id="testing">Paper Testing</p>
+                  <div class="col text-center">
+                    <iframe class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/zZYg3qcqqiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <br>
+                  <div class="col">
+                    <p class="lead">Paper Evaluation</p>
+                    <p>
+                      <strong>Observation & Change #1:</strong> One limitation we found with the paper prototype was that due to the lack of color differentiation between components on the paper cards, the test user occasionally struggled to differentiate between interactable components (e.g., buttons) and non-interactable features (e.g., headings and images). We believed that this might be fixed with online prototyping as we could utilize colors and themes to help them decide what they could press. We also thought it might be good to make certain buttons bigger if they were more important to the functionality of the extension. 
+                    </p>
+                    <p>
+                      <strong>Observation & Change #2:</strong> We noticed that we ourselves struggled with identifying the Recommendation and Liked tabs, and will now implement clearer logos and label each logo to make this distinction clearer for the user. Since there is no official “recommendation” icon, we went with the medal and a bookmark, but that might have been confusing for new users. By implementing the “Liked” tab as a heart and the Recommendation as a medal, we hoped that users people could differentiate between the two better. 
+                    </p>
+                    <p>
+                      <strong>Observation #3:</strong>  Our last observation is that people may not be aware of the thrifting/retail market and their differences. For example, people might download this extension through our marketing efforts but not know about fast fashion or what Poshmark is. This might change the way they use the app because they would prefer cheaper clothes over anything else. To solve this, we thought it would be great if there was a FAQ section available so users can learn about fast fashion, different thrifting sites, and the benefits of buying secondhand/sustainably.
+                    </p>
+                  </div>
+                </div>
+                </div>
+              </section>
+
+              <!-- Wireframes -->
+              <section>
+                <div class="col-9 text-start mx-auto">
+                    <h5 class="mx-auto" id="wireframing">Wireframing</h5>
+                    <div class="col text-center">
+                      <a href="img/Lo-Fi Frames.png" data-lightbox="Lo-Fi Frames">
+                        <img src="img/Lo-Fi Frames.png" alt="Lo-Fi Frames" class="img-fluid w-75">
+                      </a>
+                    </div>
+                    <a href="img/Lo-Fi Image Search Flow.png" data-lightbox="Lo-Fi Image Search Flow">
+                      <img src="img/Lo-Fi Image Search Flow.png" alt="Lo-Fi Image Search Flow" class="img-fluid">
+                    </a>
+                    <p class="lead">Lo-Fi Evaluation</p>
+                    <p>
+                      The first main takeaway is that the app was overall successful at achieving its purpose and users were able to complete most, if not all tasks, with little assistance. The main pain point with users was the image search, where users were confused with the process of grabbing an image or adding a brand to it. Another comment from multiple tests was that it was not clear where the recommended tab was or that they did not know what the recommendation icon was.
+                    </p>
+                </div>
+                <div class="col-9 text-start mx-auto">
+                  <a href="img/Med-Fi Image Search Flow.png" data-lightbox="Med-Fi Image Search Flow">
+                    <img src="img/Med-Fi Image Search Flow.png" alt="Med-Fi Frames" class="img-fluid">
+                  </a>
+                  <p class="lead">Med-Fi Evaluation</p>
+                  <p>
+                    This redesign maintains all of the same core features as the last design, but has improved usability for certain workflows. For instance, the image search function now splits the final step into two separate pages: Uploading a different image is now on one page and identifying the brand of the uploaded garment/skipping onto matches is on the following page. 
+                    We decided to keep the step of filtering in image search instead of eliminating it, even though we had multiple users state that this step was confusing in our first round of usability testing. Instead we improved upon this step by including a “What is this step for?”, and including a color difference between the Next and Skip buttons to provide clarity on the image search process for the user. 
+                  </p>
+                  <p>
+                    We also labeled all of the bottom navigation icons as users from our usability tests had displayed confusion over what each of the icons mean. The recommendation icon appeared to be the least identifiable of all of the icons, but we opted to keep it the same because 1) there are few universal icons for “recommendations,” and 2) we believed the label would resolve any confusion.
+                  </p>
+                  <p>
+                    The match page has also been revamped to include larger images and different views of garments as per the request of several participants in our usability studies. All other information on the page is maintained. We hoped that the introduction of higher fidelity screens and colors would eliminate any confusion over what is and what is not a button. 
+                  </p>
+                  <p>
+                    Lastly, we included an FAQ page to the profile section of the extension. This page was not explicitly requested by participants in any of the studies, but we felt it would be a helpful addition to the prototype in case anyone has any questions or concerns regarding the purpose or use of the extension.
+                  </p>
+              </div>
+              </section>
+            <section>
+              <div class="col-9 text-start mx-auto">
+                <h5 class="mx-auto" id="final-design">Final Design</h5>
+                <div class="col">
+                  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                  border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFkugtQT4g&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+              
+
+      </div>
+    </div>
+  </div>
+
+<!-- Footer goes here -->
 <div class="footer container">
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -120,8 +487,9 @@
         </a>
       </li>
     </ul>
-    <p class="text-center text-muted"><a style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="#identity">ERYNN GUTIERREZ</a> © 2023</p>
+    <p class="text-center text-muted"> made by <a style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="#identity">ERYNN GUTIERREZ</a> © 2023</p>
   </footer>
 </div>
+<script src="js/lightbox.js"></script>
 </body>
 </html>
