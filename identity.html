@@ -12,7 +12,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/lightbox.css">
     <title>Identity | Erynn Gutierrez</title>
-    <style></style>
+    <link rel="icon" type="image/png" href="img/eg.png"/>
+    <style>
+      .required-field::after {
+        content: "*";
+        color: red;
+    }
+    </style>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -32,7 +38,7 @@
                 <a class="nav-link active" aria-current="page" href="identity.html">Identity</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Erynn-Gutierrez-Resume-Spr23.pdf" target="_blank">Resume</a>
+                <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-Spr23.pdf" target="_blank">Resume</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="identity.html#connect">Connect</a>
@@ -42,7 +48,7 @@
         </div>
       </nav>
 <main>
-  <section>
+  <section id="section-1">
     <div class=" position-relative overflow-hidden bg-light">
       <div class="container">
         <div class="col-md-12 p-lg-5 mx-start my-5">
@@ -51,7 +57,7 @@
             Hey, my name is Erynn. I'm a rising third-year student at Tufts University
             studying Cognitive and Brain Science and Computer Science. I'm based
             between New York and Boston, and am excited to studying abroad in 
-            Copenhagen with DIS next spring.
+            Copenhagen with DIS in the spring of 2024.
             <br><br>
             A Filipina from New York, I love a hot bowl of Sinigang as much as I love a stacked NYC bagel. I spend most of my time maintaining a solid caffeine buzz and ideating some sort of knitting or crochet project to keep my hands busy with. 
             <br><br>
@@ -66,6 +72,8 @@
             <a href="https://www.goprojectnyc.org/about-us" target="_blank" style="color:black">Go Project</a>,
             to handpacking meals to NYC residents with serious illnesses with 
             <a href="https://www.glwd.org/about-us/our-mission/" target="_blank" style="color:black">God's Love We Deliver</a>.
+            <br><br>
+            I'm currently seeking opportunities to grow my knowledge of user design practices. I'm interested in cognition and perception through a computational perspective. Combined with my strong values in diverse teamwork, I strive to employ my ever-evolving skills from my multitude of experiences in education, volunteerism, and advocacy through all aspects of my work.
             </h2>
         </div>
       </div>
@@ -73,32 +81,32 @@
 </section>
 
 <section>
-  <div class="container">
+  <div class="container" id="connect">
     <div class="row">
         <div class="col-12 col-md-6 p-lg-5 mx-start my-5">
-          <h2 class="header display-2" id="connect">LET'S CONNECT</h2>
+          <h2 class="header display-2">LET'S CONNECT</h2>
 
          <form action="https://formspree.io/f/xeqwbkjj" method="POST">
           <div style="display: flex;">
 
             <div>
-              <label for="first-name">First Name:</label><br>
+              <label class="required-field" for="first-name">First Name</label><br>
               <input type="text" class="w-100" id="first-name" name="First Name" required>
             </div>
             <div style="margin-left: 10px;">
-              <label for="last-name">Last Name:</label><br>
+              <label class="required-field" for="last-name">Last Name</label><br>
               <input type="text" class="w-100" id="last-name" name="Last Name" required>
             </div>
             
           </div>
         
-          <label for="email">Email:</label><br>
+          <label class="required-field" for="email">Email</label><br>
           <input type="email" class="w-100" id="email" name="Email" required><br>
         
-          <label for="subject">Subject:</label><br>
+          <label class="required-field" for="subject">Subject</label><br>
           <input type="text" class="w-100" id="subject" name="Subject" required><br>
         
-          <label for="message">Message:</label><br>
+          <label class="required-field" for="message">Message</label><br>
           <textarea id="message" class="w-100" name="Message" rows="7" cols="30" required></textarea><br>
         
           <input type="submit" value="Submit" class="btn btn-primary header" style="color:white; background-color: black; border:none;">
@@ -112,6 +120,36 @@
     </div>
   </div>
 </section>
+
+    <!-- Scroll-to-top button -->
+    <a class="scroll-to-top" id="scrollToTopBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </a>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener('scroll', function () {
+        // Show or hide the scroll-to-top button based on scroll position
+        var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  
+        if (window.scrollY > document.getElementById('section-1').offsetHeight) {
+          scrollToTopBtn.classList.add('active');
+        } else {
+          scrollToTopBtn.classList.remove('active');
+        }
+      });
+  
+      // Scroll smoothly to the top of the page when the button is clicked
+      document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+  
+      </script>  
 
 </main>
 <!-- Footer -->
@@ -141,9 +179,11 @@
         </a>
       </li>
     </ul>
-    <p class="text-center text-muted">made by <a style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="identity.html" target="_blank">ERYNN GUTIERREZ</a> © 2023</p>
-  </footer>
-</div>
+    <p class="text-center text-muted">
+      <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">made by </a>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="home.html">ERYNN GUTIERREZ</a>
+       © 2023</p>
+      </div>
 <script src="js/lightbox.js"></script>
 </body>
 </html>
