@@ -22,6 +22,7 @@
         });
     </script>
     <title>Erynn Gutierrez</title>
+    <link rel="icon" type="image/png" href="img/eg.png"/>
     <style>
       h1 {
           display: inline;
@@ -80,10 +81,10 @@
               <a class="nav-link" href="home.html#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="identity.html">Identity</a>
+              <a class="nav-link" href="identity.html">Identity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Erynn-Gutierrez-Resume-Spr23.pdf" target="_blank">Resume</a>
+              <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-Spr23.pdf" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="identity.html#connect">Connect</a>
@@ -94,20 +95,24 @@
     </nav>
     <main>
     <!-- About Snippet -->
-        <section>
+        <section id="section-1">
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
                 <div class="col-md-8 p-lg-5 mx-auto my-5">
                     <div class="fw-normal">
                         <h1 class="display-1 header">DIGITAL</h1>
-                        <h1 class="display-3"><span class="rotate"> leader, creative, learner, explorer </span></h1>
+                        <h1 class="display-3"><span class="rotate"> leader, creative, learner, explorer, lover</span></h1>
                     </div>
+                    <br>
+                    <h3>
+                    I'm a rising junior at Tufts University studying Cognitive and 
+                    Brain Science and Computer Science. Driven by my 
+                    passions for identity and community, I strive to craft 
+                    accessible and inclusive technology that is not only relevant to, 
+                    but reflective of the user. </h3>
+                    <br>
                     <p class="lead fw-normal">
-                    As a designer, I center myself in understanding  
-                    who I’m designing for and why I am designing it, before the 
-                    what takes shape. My vision is to create accessible and 
-                    inclusive technology in the world of music, social work, and
-                    fitness. Let’s work together to redefine and reimagine 
-                    what’s possible.
+                    Let's collaborate in 
+                    redefining and envisioning a multitude of new possibilities.
                   </p>
                 </div>
               </div>
@@ -168,6 +173,37 @@
       </div>
   </div>
 </section>
+
+    <!-- Scroll-to-top button -->
+    <a class="scroll-to-top" id="scrollToTopBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </a>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener('scroll', function () {
+        // Show or hide the scroll-to-top button based on scroll position
+        var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  
+        if (window.scrollY > document.getElementById('section-1').offsetHeight) {
+          scrollToTopBtn.classList.add('active');
+        } else {
+          scrollToTopBtn.classList.remove('active');
+        }
+      });
+  
+      // Scroll smoothly to the top of the page when the button is clicked
+      document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+  
+      </script>  
+
 </main>
 
 <!-- Footer -->
@@ -197,9 +233,11 @@
         </a>
       </li>
     </ul>
-    <p class="text-center text-muted">made by <a style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="identity.html" target="_blank">ERYNN GUTIERREZ</a> © 2023</p>
+    <p class="text-center text-muted">
+      <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">made by </a>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="home.html">ERYNN GUTIERREZ</a>
+       © 2023</p>
   </footer>
-
 </div>
 </body>
 </html>
