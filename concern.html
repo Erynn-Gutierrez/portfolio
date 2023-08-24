@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/external.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
+  <title>Concern Worldwide US | Erynn Gutierrez</title>
+  <link rel="icon" type="image/png" href="img/eg.png"/>
+  <style>
+    .brief {
+      display: inline-block;
+    }
+
+    section {padding-bottom: 5em; }
+
+    #scrollspy {
+        position:fixed;
+        /* top:50%; */
+        right:0;
+        text-align:right;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 576px) {
+      .this {
+        order: 1;
+      }
+
+      .that {
+        order: 2;
+        text-align: center;
+      }
+    }
+    @media (max-width: 758px) {
+
+      #scrollspy {
+        visibility:hidden;
+      }
+
+    }
+
+    .comp-img {
+      width: 75%;
+      height: auto;
+    }
+
+    #scrollspy {
+        font-size: 10pt;
+    }
+
+    .nav-link {color:black;}
+
+    .caption {font-size: 9pt;}
+
+    #links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+    a:hover {color:#00734A !important;}
+
+    a {color:black;}
+
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 100
+    })
+</script>
+</head>
+<body>
+<!-- Nav Bar goes here -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./">ERYNN GUTIERREZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./identity">Identity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-2023.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./identity#connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Scrollspy -->
+  <div class="container whole">
+    <div class="row">
+      <div class="col-auto">
+        <div id="scrollspy">
+          <ul class="nav flex-column" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#research-ideation">Research & Ideation</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About CWUS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-problems">The Problems</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-goal">The Goal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#campaign-focus">Campaign Focus</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#user-analysis">User Analysis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#design-implementation">Design & Implementation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#engagement-program">Engagement Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#considerations">Considerations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#email-1">Email #1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#email-2">Email #2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#email-3">Email #3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#outcome">The Outcome</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" id="intro">
+        <section id="section-1">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+              <div class="col-md-12 my-2">
+                  <div class="fw-normal">
+                      <h1 class="display-1 header">CONCERN WORLDWIDE US</h1>
+                  </div>
+                  <h3 class="subheader fw-normal text-right">
+                      Ending extreme poverty, whatever it takes.
+                  </h3>
+              </div>
+            </br>
+            </br>
+            </br>
+  
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1">
+                      <a href="img/concern-proto.png" data-lightbox="concern-proto" data-title="Concern Email 1 Prototype">
+                        <img src="img/concern-proto.png" alt="concern-prototype" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 that">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-end">
+                                    I aimed to develop a new email series that is triggered
+                                    upon a subscriber's interactions with Concern's articles on their
+                                    new website. Essentially, when a subscriber reads an article about
+                                    Livelihoods & Financial Empowerment, they will be automatically entered into a targeted
+                                    email series that details the article they read alongside previous donor
+                                    history, to further urge them to donate towards Livelihoods & Financial Empowerment.
+                                </p>
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ROLE</th>
+                                            <th scope="col">TEAM</th>
+                                            <th scope="col">TIME</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UI Design/Testing<br>User Research<br>Writing<br>Copywriting</td>
+                                            <td>Jocelyn Carlisle<br>Camille Marinelli<br>Dan Rocklin<br>Candance Patel-Taylor</td>
+                                            <td>8 Weeks</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </section>
+
+
+      <!-- Research and Ideation -->
+          <div class="row mx-auto" id="research-ideation"></div>
+              <h2 class="header text-center">RESEARCH & IDEATION</h2>
+              <section id="about">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-9 text-start mx-auto">
+                      <h5 class="text-start" id="email-3">About Concern Worldwide US</h5>
+                      <p>
+        
+                        Concern Worldwide US is a non-profit organization dedicated to transforming lives and communities across the globe. With a steadfast commitment to humanitarian efforts, Concern Worldwide US employs innovative strategies and collaborative partnerships to alleviate poverty, provide emergency relief, and promote sustainable development within vulnerable communities long after Concern's support.
+                        </p>
+                        <p>
+                        At the heart of Concern Worldwide US's mission is the unwavering belief in the potential of every individual. By fostering a sense of belonging and empowerment, the organization aims to create a world where all people have the opportunity to thrive and flourish. This vision drives Concern Worldwide US's dedication to forging lasting change and delivering vital support to those in need.
+                      </p><p>
+                        Concern's vision is a world where compassion, resilience, and solidarity intersect to create a global community that is resilient in the face of adversity. Through collaboration, innovation, and a deep-rooted sense of purpose, Concern Worldwide US endeavors to create a brighter and more equitable future for all.
+                      </p>
+                      </div>
+              </section>
+                <section id="the-problems">
+                    <div class="col-9 text-start mx-auto">
+                <h5>The Problems</h5>
+                <p>
+                  In 2021, Contributions & Non-Governmental Grants and Special 
+                  Events accounted for less than 6.8% of Concern Worldwide US' (CWUS) 75.1 million
+                  dollar revenue. Around 90% came from government grants, 3% from Concern Worldwide, 
+                  and 1% from other sources. While government funding is strictly allocated 
+                  based on predetermined purposes, non-governmental grants 
+                  offer flexibility to address current needs, making them essential
+                  to serving the then 24 countries under CWUS.
+                </p>
+                <p>
+                  Yet, with rising needs in the now 25 countries they serve as of 2023,
+                  CWUS has a greater need for supplementary, non-governmental funds in order
+                  to properly aid the most vulnerable populations of the world. Further,
+                  with the revamping of their old website came the implementation of a new 
+                  tracking pixel, which resulted in inaccuracy in recent user data (i.e. page
+                  views).
+                </p>
+              </div>
+              <br>
+              <div class="row justify-content-center">
+                <div class= "col-6 text-start">
+                    <h6 class="text-center">Concern Worldwide US Support and Revenue (71.4 million), 2021</h6>
+                    <a href="img/2021-support.png" data-lightbox="Support and Revenue" data-title="Concern Worldwide US Support and Revenue (71.4 million), 2021">
+                      <img src="img/2021-support.png" alt="transparency" class="img-fluid">
+                    </a>
+                    <p class="caption">Source: Concern Worldwide US Annual Report, 2021</p>
+                </div>
+              </div>
+                </section>
+            <!-- The Goal -->
+            <section id="the-goal">
+                <div class="row">
+                    <div class="col-9 text-start mx-auto">
+                    <h5>The Goal</h5>
+                    <p>We aimed to create a framework for a new email campaign that bridged
+                      donor history from Salesforce to viewer analytics from the new website.
+                      This way, we can tailor email content to match that of the donor's interests
+                      and giving history, to further personalize the donation experience --
+                      ultimately with the goal of increasing donations as well as
+                      utilizing two of Concern's most integral platforms to 
+                      obtain non-governmental donations.
+                    </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Campaign Focus -->
+            <section id="campaign-focus">
+                <div class="container">
+                    <div class="col-9 text-start mx-auto">
+                        <h5 class="mx-auto">Campaign Focus</h5>
+                        <p>
+                          The first step involved selecting a campaign focus out of the 
+                          6 facets of Concern's work: Climate Change, Emergencies & Refugees,
+                          Health & Nutrition, Livelihoods & Empowerment, Education,
+                          and Gender Equality.
+                        </p>
+                        <p>
+                          Given that the campaign is intended for non-major donors 
+                          (those with first gifts totalling below $1,000), I conducted an analysis
+                          comparing data from registered donors on Pardot with the 
+                          overall site traffic related to different article topics on 
+                          Concern's website starting from the beginning of 2023 up until their
+                          website's relaunch in June. Per Concern's Google Analytics, 
+                          articles related to Livelihoods & Financial Empowerment received the highest 
+                          number of visits and users. Furthermore, 
+                          these Livelihoods articles displayed significant 
+                          interest from registered non-major donors, showing high engagement
+                          scores in redirects and clicks on the articles.
+                      </p>
+                      <p>
+                        Because of Livelihoods & Financial Empowerment's intertwinedness with 
+                        other facets of Concern's work, I knew this focus would give me both flexibility
+                        in the emails' content, as well as pose as a challenge in
+                        encapsulating the breadth of Livelihoods work in Concern's programming - a challenge
+                        I was excited to tackle.
+                    </p>
+                      <div class="row justify-content-center">
+                        <div class= "col-8 text-start">
+                          <br>
+                            <h6 class="text-center" id="livelihoods-articles">Top 10 Performing Livelihoods Articles (by page views and users), Jan 2023 - June 2023</h6>
+                            <a href="img/livelihoods-articles.png" data-lightbox="Livelihoods Articles" data-title="Top 10 Performing Livelihoods Articles (by page views and users), Jan 2023 - June 2023">
+                              <img src="img/livelihoods-articles.png" alt="livelihoods-articles" class="img-fluid">
+                            </a>
+                            <p class="caption">Source: Concern Worldwide USA, Google Analytics</p>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- User Analysis -->
+                    <section id="user-analysis">
+                      <div class="container">
+                        <div class="col-9 text-start mx-auto">
+                          <h5 class="mx-auto">User Analysis</h5>
+                        <p>
+                          To gain a further grasp into the recipients of the campaign,
+                          I created 5 user personas to support clear communication
+                          during the design process. We identified 5 main recipients:
+                          the Dissuaded, the Unopened, the Reluctant Donor, the Non-Donor, and the
+                          Returning Donor.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 text-start my-auto">
+                                <img src="img/dissuaded-dan.png" alt="dissuaded-dan" class="w-75">
+                            </div>
+                            <div class="col">
+                                <h6>Dissuaded Dan</h6>
+                                <p>
+                                    Dan was subscribed to CWUS, but he unsubscribed
+                                    after receiving the first Livelihoods & Financial Empowerment email.
+                                    He could have or could not have had previous donor history.
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4 text-start my-auto">
+                                <img src="img/unopened-uriel.png" alt="unopened-uriel" class="w-75">
+                            </div>
+                            <div class="col">
+                                <h6>Unopened Uriel</h6>
+                                <p>
+                                  Uriel is a high schooler who subscribed to 
+                                  CWUS emails as a part of his assignment 
+                                  for his AP Global History class. Despite reading his 
+                                  fair share of articles on Livelihoods & Financial Empowerment,
+                                  he does not check his emails, and is ultimately automatically unsubscribed.
+                                  He could have or could not have had previous donor history.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-4 text-start my-auto">
+                                <img src="img/reluctant-rachel.png" alt="reluctant-rachel" class="w-75">
+                            </div>
+                            <div class="col">
+                                <h6>Reluctant Rachel</h6>
+                                <p>
+                                    Rachel has been following
+                                    to CWUS for about a couple of months. She is
+                                    subscribed to email, opened all of the Livelihoods & Financial Empowerment emails,
+                                    and even clicked on the donation links; but she 
+                                    has not donated yet.
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-4 text-start my-auto">
+                              <img src="img/nondonor-nadia.png" alt="nondonor-nadia" class="w-75">
+                          </div>
+                          <div class="col">
+                              <h6>Non-Donor Nadia</h6>
+                              <p>
+                                  Nadia has a previous donor history with Concern.
+                                  Yet after receiving the first Livelihoods &
+                                  Financial Empowerment email she decided
+                                  to not donate at this time.
+                              </p>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-4 text-start my-auto">
+                            <img src="img/returner-ryan.png" alt="returner-ryan" class="w-75">
+                        </div>
+                        <div class="col">
+                            <h6>Returner Ryan</h6>
+                            <p>
+                              Ryan has a previous donor history with Concern.
+                              After receiving the Livelihoods &
+                              Financial Empowerment emails he decided
+                              to donate to the campaign!
+                            </p>
+                        </div>
+                    </div>
+                      </div>
+                </div>
+            </section>
+            <!-- End of User Analysis -->
+
+            <!-- Design & Implementation -->
+            <div class="row mx-auto" id="design-implementation"></div>
+            <h2 class="header text-center">DESIGN & IMPLEMENTATION</h2>
+            <section>
+            <div class="col-9 text-start mx-auto">
+                <h5 class="mx-auto" id="engagement-program">Engagement Program</h5>
+                <p>
+                    In crafting an engagement program within Pardot, I begun by 
+                    utilizing our user personas and segmenting our audience based on their interactions and 
+                    engagement with the three emails of the series. The program kicks off when subscribers 
+                    meet the criteria of having read selected articles
+                     on Livelihoods and Financial Empowerment and being subscribed
+                    to Concern emails.
+                </p>
+                <div class="row justify-content-center">
+                  <div class= "col-8 text-start">
+                      <a href="img/phase-1.png" data-lightbox="Engagement Program Phase 1">
+                        <img src="img/phase-1.png" alt="phase-1" class="img-fluid">
+                      </a>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  The first email delves into each recipient's donor history and highlights a 
+                  recent Concern article they've engaged with. Should the 
+                  recipient open this initial email within three days, we assess
+                   whether they clicked any donation links within, and later donated to the campaign.
+                  However, if no donation link is clicked, we proceed to the second phase.
+                </p>
+                <div class="row justify-content-center">
+                  <div class= "col-8 text-start">
+                      <a href="img/phase-2.png" data-lightbox="Engagement Program Phase 2">
+                        <img src="img/phase-2.png" alt="phase-2" class="img-fluid">
+                      </a>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  In the second step, an engaging follow-up email, Email #2, 
+                  is dispatched. In case of a donation, the program concludes, ensuring a 
+                   successful engagement. If a donation is not made, or if the 
+                   recipient does not open Email #2, or does but does not click a donation link, 
+                   we transition to the third phase.
+                </p>
+                <div class="row justify-content-center">
+                  <div class= "col-8 text-start">
+                      <a href="img/phase-3.png" data-lightbox="Engagement Program Phase 3">
+                        <img src="img/phase-3.png" alt="phase-3" class="img-fluid">
+                      </a>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  The final email of the series, Email #3, is a strategically crafted message 
+                  intended to encourage donation by underscoring the urgency and 
+                  impact of their potential contribution. Essentially an "abandoned cart", 
+                  message, the third email is targeted for recipients who do not follow
+                  through with a donation, despite opening the past 2 emails.
+                  If they click on the donation link but do not donate by the 3rd email, they are considered as a Reluctant donor
+                  in Salesforce. On the other hand, if they do not click on the donation link and do not donate by the 3rd email, 
+                  they are considered a Non-Donor.
+                </p>
+                <p>
+                  Throughout the entire journey, engagement scores are meticulously managed, with 
+                  points awarded for various actions such as email opens, link 
+                  clicks, and donations, while unsubscribers lead to a reduction 
+                  in engagement score that helps maintain Salesforce dsts and ensure
+                  the ending of those customer communications. Robust reporting and analytics tools enable 
+                  Concern to closely monitor the program's effectiveness, 
+                  thus refining our approach to optimize engagement and conversion.
+                </p>
+            </div>
+            </section>
+            <!-- End of Engagement Program -->
+
+            <!-- Email Considerations -->
+            <section>
+              <div class="col-9 text-start mx-auto">
+                <h5 class="mx-auto" id="considerations">Considerations</h5>
+                  <p>
+                    With the engagement program completed, I was now able to
+                    enter the design phase for the emails - but not without first considering 
+                    the challenges of email design.
+                  </p>
+                  <p>
+                    According to a 2021 worldwide study ran on an analysis of 
+                    8 billion email opens from 2011 to 2021 (by MarketingCharts & Litmus),
+                    people spent an average of 10 seconds reading brand emails in 2021,
+                    a number that continues to decline.
+                  </p>
+                  <p>
+                    Considering that these were fundraising emails, I knew that
+                    I needed to design this email in a way that detailed the cause 
+                    at hand while keeping it concise and easy to read under this
+                    10 second "reading" period.
+                  </p>
+                  <p>
+                    For each email in the series, they followed along the lines of
+                    this outline:
+                    <dl>
+                      <dt>Opening</dt>
+                        <dd>Dynamic Content 1 (“You read...”) - Dependent on Email</dd>
+                        <dd>The importance of financial empowerment and how it goes hand in hand with breaking the cycle of poverty</dd>
+                      <dt>Call To Action</dt>
+                        <dd>Dynamic Content 2 (“Your past support...”) - Dependent on Email</dd>
+                        <dd>Donation Button</dd>
+                      <dt>Body</dt>
+                        <dd>Aspects of Livelihoods Work that Concern engages in</dd>
+                        <dd>Concern’s Impact</dd>
+                        <dd>Donation Button</dd>
+                      <dt>Conclusion</dt>
+                        <dd>Thank for support</dd>
+                        <dd>In-Line Donation</dd>
+                        <dd>Sign Off</dd>
+                  </p>
+              </div>
+            </section>
+            <!-- Email #1 -->
+              <section>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-9 text-start mx-auto">
+                      <h5 class="text-start" id="email-1">Email #1</h5>
+                      <p>
+                        Considering that this email kicks off the series and is the most personal out of the three potential emails a subscriber would receive, the first email had to live up to be the greatest attention grabber. The goal? Craft the first email as though it's the only shot you have to convince the recipient to donate - which is why the first sentence of the email acknowledges their interest in Livelihoods by reminding them of a Concern article they engaged with.
+                      </p>
+                      <p>
+                        To obtain the level of personalization that Email #1 requires, I used Pardot's <strong>dynamic content</strong>, which allows me to manipulate aspects of an email's content based on specific criteria, such as the recipient's attributes, preferences, or behaviors. Here's how it works:
+                      </p>
+                      <div class="row justify-content-center">
+                        <div class="col-8 text-start">
+                          <a href="img/create-variants.png" data-lightbox="Create Variants" data-title="Triggered Livelihoods Pages">
+                            <img src="img/create-variants.png" alt="Create Variants" class="img-fluid">
+                          </a>
+                        </div>
+                      </div>
+                      <br>
+                      <p>
+                        <strong>Define Dynamic Content:</strong> Within Pardot, I created dynamic content block for the section of the email that I wanted to change: in this case, a given variant of the "2023-Livelihoods-Triggered-Page" dynamic content was to replace the first paragraph of the email.
+                      </p>
+                      <div class="row justify-content-center">
+                        <div class="col-8 text-start">
+                          <a href="img/define-dc.png" data-lightbox="Define Dynamic Content" data-title="Matching titles of Livelihoods Articles to their short summary variants">
+                            <img src="img/define-dc.png" alt="Define Dynamic Content" class="img-fluid">
+                          </a>
+                        </div>
+                      </div>
+                      <br>
+                      <p>
+                        <strong>Place Dynamic Content:</strong> The last step was placing the dynamic content in the email template, which will parse all the previous steps upon send of the email.
+                      </p>
+                      <div class="row justify-content-center">
+                        <div class="col-8 d-flex text-start">
+                          <a href="img/triggered-page.png" data-lightbox="Triggered Livelihood Pages" data-title="Triggered Livelihoods Pages: Full Process">
+                            <img src="img/triggered-page.png" alt="Place Dynamic Content" class="img-fluid">
+                          </a>
+                        </div>
+                      </div>
+                      <br>
+                      <p>
+                        I also followed the same process for the email's head image, which is replaced by the user's engaged article's lead image.
+                      </p>
+                      <p>
+                        As for the last piece of dynamic content for Email #1, I created a Dynamic Content block with 4 different Call to Actions that matched the user's stored Donor Type within Salesforce. Specifics can be viewed in <a href="#email-2">Email #2</a>.
+                      </p>
+                      <div class="col">
+                        <p>
+                          A major challenge I found with crafting all this dynamic content was writing the default content that would need to make sense within the context of 10 different emails. This came up particularly with the second paragraph of the email, which needed to connect into one idea that amassed all 10 articles.
+                        </p>
+                        <p>
+                          Thus, after many, many edits, we landed at the following, final passage for the second paragraph, which connected well with all of the summaries I'd written for the triggered articles:
+                        </p>
+                        <p>
+                          <i>This is why Livelihoods and Financial Empowerment programs are at the core of Concern's work. Through Concern’s support, the world’s most vulnerable communities are provided cash assistance, tools, and resources that keep people living on less than $1.90 a day above the poverty line.</i>
+                        </p>
+                        <p>
+                          The donation button reads: <i>Invest in Change</i>, matching the language of asking for a donation that will innovate communities and families around the world. After the call to action, I decided to include additional details about Livelihoods and Financial Empowerment programming, with an in-line donation link, in case the first half of the email did not provide all the information they needed.
+                        </p>
+                      </div>
+                      <div class="col text-center">
+                        <p class="lead">Final Design</p>
+                        <div class="w-75 mx-auto">
+                          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); max-width: 100%;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOtbvkN0oinl21Wwpfd9wZ%2FConcern-Worldwide-Emails%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D2-1444%26viewport%3D2163%252C-4079%252C0.34%26t%3DDRcKhL0PmzQCnve4-1%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A1444%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+
+            <!-- Email #2 -->
+            <section>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-9 text-start mx-auto">
+                    <h5 class="text-start" id="email-2">Email #2</h5>
+                    <p>
+                      Although Email #2 does not utilize as much dynamic content as its predecessor, the bulk of the work behind this email was writing content that would entice the reader to click that donation link and donate.
+                    </p>
+                    <p>
+                      This time, I opened the email with the fact that 719,000,000 people are living in extreme poverty and the recipient has engaged with Concern's content regarding Livelihoods and Financial Empowerment. Including the recipient in Concern's work makes them feel included and seen within Concern's outreach, which is why the next paragraph before the donation button is the same Call to Action dynamic content block from the first email that acknowledges their prior engagement with Concern.
+                    </p>
+                    <p>The different Donor Types for the Call to Actions are as follows: <br>
+                      <b>Non-Donor:</b> Has never donated to Concern before.<br>
+                      <b>Non-Convert Donor:</b> Clicked the donation link but did not donate.<br>
+                      <b>Current Donor:</b> Has donated to Concern within the past year.<br>
+                      <b>Lapsed Donor:</b> Has donated to Concern within the past 5 years, but not within this year.<br>
+                    </p>
+                    <div class="row justify-content-center">
+                      <div class="col-8 text-start">
+                        <a href="img/triggered-ctas.png" data-lightbox="Triggered CTAs" data-title="Triggered Livelihoods CTAs: Full Process">
+                          <img src="img/triggered-ctas.png" alt="Place Dynamic Content" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <br>
+                    <p>The weaker the recipient's donation status, the stronger the language I utilized in the email's call to action. If they've previously donated, I included the amount they've contributed to acknowledge the recipient's trust in us in the past, and ask for that same trust again with another gift.</p>
+                    <p>I changed the donation button text to <i>Be the Change</i>, to show the recipient how they can be a direct changemaker alongside Concern's work. For the rest of the email, I included clarifying details on how Concern's programming, like the aforementioned Graduation program, comes to fruition by showing how Concern's solutions acknowledge the different causes of poverty, highlighting how Concern is different from other like-minded organizations.</p>
+                    <p>The email ends with a strong Call to Action with the goal of including the recipient: <i>Your concern is just the start. Join us to create lasting change in people's lives today</i>.</p>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-9 text-center">
+                      <p class="lead">Final Design</p>
+                      <div class="w-75 mx-auto">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); max-width: 100%;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOtbvkN0oinl21Wwpfd9wZ%2FConcern-Worldwide-Emails%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D63-2500%26viewport%3D2163%252C-4079%252C0.34%26t%3DDRcKhL0PmzQCnve4-1%26scaling%3Dscale-down%26starting-point-node-id%3D63%253A2500%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+                        
+            <!-- Email #3 -->
+            <section>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-9 text-start mx-auto">
+                    <h5 class="text-start" id="email-3">Email #3</h5>
+                    <p>
+                      With Email #3, the goal was to get those who clicked on donation links in previous emails, but failed to donate. Hence, the implementation of money handles, which streamlines the donation process while also 1. prioritizing the direct impact their donation could make and 2. challenging the recipient to give an amount they wouldn't have considered before through the provision of other donation amounts.
+                    </p>
+                    <p>
+                      To reach the several donation ranges, I utilized dynamic content based upon the recipient's largest gift amount. Recipients receive different gift ranges based on whether that amount was less than $100, between $99 and $299, or between $300 and $999.
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-9 text-center">
+                    <p class="lead">Final Design</p>
+                    <div class="w-75 mx-auto">
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); max-width: 100%;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSOtbvkN0oinl21Wwpfd9wZ%2FConcern-Worldwide-Emails%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D115-323%26viewport%3D2123%252C-4035%252C0.32%26t%3DcDgAl22Nyv2IQqFw-1%26scaling%3Dscale-down%26starting-point-node-id%3D115%253A323%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      </div>
+    </div>
+
+    <!-- The Outcome -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-9 text-start mx-auto">
+            <h5 class="text-start" id="outcome">The Outcome</h5>
+            <p>
+              Though I was unable to launch the campaign myself due to time constraints, 
+              during this internship, I accomplished my personal learning objectives. I…
+            </p>
+            <ul>
+              <li>Spearheaded the design process from start to finish</li>
+              <li>Worked within a cross-departmental team and learned how to operate within such departments</li>
+              <li>Learned from my mentor alongside experienced designers, writers, and other marketing and communications experts</li>
+              <li>Gained insights on nonprofit functionality in the marketing technology space, from understanding communications language to direct donor targeting.</li>
+            </ul>
+            <p>
+              I would like to thank my manager and mentor, Jocelyn Carlisle, 
+              for without her guidance, this project wouldn't have been possible.
+              The loads of support and incredible experience from her and the MarComms team this summer is something
+              that will stick with me as I continue to grow in my career.
+            </p>
+            <p>
+              Finding that you want to learn more about Concern Worldwide, or want to go through the motions of the triggered campaign yourself?
+            </p>
+            <p>
+              First, subscribe to Concern emails <a href="https://concernusa.org/newsletter-sign-up/" target="_blank">here</a>, then, click on any of the below articles to enter yourself into the campaign.
+            </p>
+            <ul id="links">
+              <li><a href="https://concernusa.org/news/solutions-to-poverty/" target="_blank">Solutions to Poverty to Get Us To 2030</a></li>
+              <li><a href="https://concernusa.org/news/how-does-education-affect-poverty" target="_blank">How Education Affects Poverty</a></li>
+              <li><a href="https://concernusa.org/news/causes-of-poverty/" target="_blank">Causes of Poverty</a></li>
+              <li><a href="https://concernusa.org/news/poverty-in-niger" target="_blank">Poverty In Niger: 5 Things You Need to Know</a></li>
+              <li><a href="https://concernusa.org/news/worlds-poorest-countries/" target="_blank">World’s 10 Poorest Countries</a></li>
+              <li><a href="https://concernusa.org/news/village-savings-and-loans-associations-explained/" target="_blank">Village Savings & Loans/Micro-Finance Explained</a></li>
+              <li><a href="https://concernusa.org/news/cash-transfers-explained/" target="_blank">Cash Transfers Explained</a></li>
+              <li><a href="https://concernusa.org/news/zero-hunger-explained" target="_blank">Zero Hunger Explained</a></li>
+              <li><a href="https://concernusa.org/news/solutions-to-poverty/" target="_blank">Solutions to Poverty to Get Us To 2030</a></li>
+              <li><a href="https://concernusa.org/news/worlds-hungriest-countries/" target="_blank">World’s Hungriest Countries</a></li>
+            </ul>
+            <br>
+            <p>
+              Shortly, you should be entered into the Engagement Program and receive the these very emails in your inbox, making your own choices on how to interact with the series!
+            </p>
+            <p>
+              If you would like to hear a more in-depth version of all that was presented above, feel free to connect with me!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+</div>
+
+    <!-- Scroll-to-top button -->
+  <a class="scroll-to-top" id="scrollToTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </a>
+
+    <!-- Scroll-to-homepage button -->
+    <a href="./#projects" style= "text-decoration: none; color:black;" class="scroll-to-homepage" id="scrollToHomepageBtn">
+      <i class="bi bi-arrow-left-short" width="25" height="25"></i>Back to My Projects
+    </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      // Show or hide the scroll-to-top button based on scroll position
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      var scrollToHomepageBtn = document.getElementById('scrollToHomepageBtn');
+
+      if (window.scrollY > document.getElementById('section-1').offsetHeight) {
+        scrollToTopBtn.classList.add('active');
+        scrollToHomepageBtn.classList.add('active');
+      } else {
+        scrollToTopBtn.classList.remove('active');
+        scrollToHomepageBtn.classList.remove('active');
+      }
+    });
+
+    // Scroll smoothly to the top of the page when the button is clicked
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    </script>
+
+
+
+<!-- Footer goes here -->
+<div class="footer container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="./identity#connect" class="nav-link px-2 text-muted">Connect</a></li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/erynn-gutierrez/" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/Erynn-Gutierrez" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="mailto:Erynn.Gutierrez@tufts.edu" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-open-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 7.384v5.733l3.479-2.087c.15.275.335.553.558.83l-4.002 2.402A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738l-4.002-2.401c.223-.278.408-.556.558-.831L15 13.117V7.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM7.06.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="text-center text-muted">
+      <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">made by </a>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./">ERYNN GUTIERREZ</a>
+       © 2023</p>
+      </footer>
+
+</div>
+<script src="js/lightbox.js"></script>
+</body>
+</html>
