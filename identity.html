@@ -10,206 +10,114 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
-    <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".rotate").textrotator({
-                animation: "fade",
-                separator: ",",
-                speed: 1000
-            });
-        });
-    </script>
-    <title>Erynn Gutierrez</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>Identity | Erynn Gutierrez</title>
     <link rel="icon" type="image/png" href="img/eg.png"/>
     <style>
-      h1 {
-          display: inline;
-      }
-  
-      div.bg-image.container {
-        position: relative;
-        width:492px;
-        height:369px;
-      }
-
-      /* Hover */
-      div.bg-img-overlay.text-center {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        font-weight: bold;
-        font-size: 24pt;
-        background: rgba(0, 0, 0, 0.6);
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 468px;
-        height: 351.2px;
-        margin-left: 11.5px;
-        opacity:0;
-      }
-
-      div.col-md-6.my-4 img {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-
-      div.bg-img-overlay.text-center:hover {
-        opacity:1;
-      }
-
-  </style>
+      .required-field::after {
+        content: "*";
+        color: red;
+    }
+    </style>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./">ERYNN GUTIERREZ</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./identity">Identity</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-2023.pdf" target="_blank">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./identity#connect">Connect</a>
-            </li>
-          </ul>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./">ERYNN GUTIERREZ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./identity">Identity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-2023.pdf" target="_blank">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./identity#connect">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<main>
+  <section id="section-1">
+    <div class=" position-relative overflow-hidden bg-light">
+      <div class="container">
+        <div class="col-md-12 p-lg-5 mx-start my-5">
+            <h1 class="header display-1">WHO I AM</h1>
+            <h2>
+            Hey, my name is Erynn. I'm a rising third-year student at Tufts University
+            studying Cognitive and Brain Science and Computer Science. I'm based
+            between New York and Boston, and am excited to studying abroad in 
+            Copenhagen with DIS in the spring of 2024.
+            <br><br>
+            A Filipina from New York, I love a hot bowl of Sinigang as much as I love a stacked NYC bagel. I spend most of my time maintaining a solid caffeine buzz and ideating some sort of knitting or crochet project to keep my hands busy with. 
+            <br><br>
+            Some more fun facts about me: growing up around music, I did some 
+            cool performances, from 
+            <a href="https://youtu.be/_x3tK5aJi9I" target="_blank" style="color:black">singing on stage with David Byrne</a>
+            to singing on Wye Oak's 2020 album, <a href="https://open.spotify.com/album/5iRAOyvHdSeqUSkxddyu2y?si=9CXNylF-RhCAZxuRF4T32Q" target="_blank" style="color:black">No Horizon</a>.
+            I'm very passionate about community, immersing
+            myself across several volunteer opportunities across the years, from
+            teaching NYC elementary students attending under-resourced public schools
+            reading, writing, and math with the 
+            <a href="https://www.goprojectnyc.org/about-us" target="_blank" style="color:black">Go Project</a>,
+            to handpacking meals to NYC residents with serious illnesses with 
+            <a href="https://www.glwd.org/about-us/our-mission/" target="_blank" style="color:black">God's Love We Deliver</a>.
+            <br><br>
+            I'm currently seeking opportunities to grow my knowledge of user design practices. I'm interested in cognition and perception through a computational perspective. Combined with my strong values in diverse teamwork, I strive to employ my ever-evolving skills from my multitude of experiences in education, volunteerism, and advocacy through all aspects of my work.
+            </h2>
         </div>
       </div>
-    </nav>
-    <main>
-    <!-- About Snippet -->
-        <section id="section-1">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-                <div class="col-md-8 p-lg-5 mx-auto my-5">
-                    <div class="fw-normal">
-                        <h1 class="display-1 header">DIGITAL</h1>
-                        <h1 class="display-3"><span class="rotate"> leader, creative, learner, explorer, lover</span></h1>
-                    </div>
-                    <br>
-                    <h3>
-                    I'm a rising junior at Tufts University studying Cognitive and 
-                    Brain Science and Computer Science. Driven by my 
-                    passions for identity and community, I strive to craft 
-                    accessible and inclusive technology that is not only relevant to, 
-                    but reflective of the user. </h3>
-                    <br>
-                    <p class="lead fw-normal">
-                    Let's collaborate in 
-                    redefining and envisioning a multitude of new possibilities.
-                  </p>
-                </div>
-              </div>
-        </section>
+    </div>
+</section>
 
-<!-- Projects -->
 <section>
-  <div class="position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center">
-      <div class="row text-center">
-          <div class="col-md-12 mx-auto my-4 mx-2">
-              <div class="fw-normal text-center">
-                  <h2 class="header display-5" id="projects">MY PROJECTS</h2>
-              </div>
-          </div>
-          <!-- second chance -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-              <img class="bg-img" src="img/second-chance-front.jpg" alt="Second Chance">
-              <div class="bg-img-overlay text-center">
-              <h3 class="bg-img-title">
-                <a href="./second-chance" class="header text-white text-decoration-none">READ MORE</a>
-              </h3>
-              </div>
+  <div class="container" id="connect">
+    <div class="row">
+        <div class="col-12 col-md-6 p-lg-5 mx-start my-5">
+          <h2 class="header display-2">LET'S CONNECT</h2>
+
+         <form action="https://formspree.io/f/xeqwbkjj" method="POST">
+          <div style="display: flex;">
+
+            <div>
+              <label class="required-field" for="first-name">First Name</label><br>
+              <input type="text" class="w-100" id="first-name" name="First Name" required>
             </div>
-            <div class="info second-chance">
-              <h2 class="header">SECOND CHANCE</h2>
-              <div class="container w-75">
-                <p class="text-right">A collection of high-fidelity prototypes
-                  developed for the UI of a conceptualized sustainability shopper
-                  and education web extension, <i>Second Chance</i>, created
-                  as a course-long group project for CS 171: Human-Computer Interaction.
-                </p>
-              </div>
-              <a class="btn btn-primary header" href="./second-chance" role="button">Read More</a>
+            <div style="margin-left: 10px;">
+              <label class="required-field" for="last-name">Last Name</label><br>
+              <input type="text" class="w-100" id="last-name" name="Last Name" required>
             </div>
+            
           </div>
-          <!-- fruity treasures -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-                  <img class="bg-img" src="img/fruity-front.jpg" alt="Fruity Treasures">
-                  <div class="bg-img-overlay text-center">
-                  <h3 class="bg-img-title">
-                    <a href="./fruity-treasures" class="header text-white text-decoration-none">READ MORE</a>
-                  </h3>
-                  </div>
-            </div>
-            <div class="info fruity-treasures">
-              <h2 class="header">FRUITY TREASURES</h2>
-                <div class="container w-75">
-                <p class="text-right">A website developed for a conceptualized
-                  startup focused on expanding accessibility and
-                  diversity of fruit in e-commerce spaces, <i>Fruity Treasures</i>, created
-                  as a course-long group project for CS 20: Web Programming.
-                </p>
-                </div>
-              <a class="btn btn-primary header" href="./fruity-treasures" role="button">Read More</a>
-          </div>
-      </div>
-          <!-- concern -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-                  <img class="bg-img" src="img/concern-front2.png" alt="Concern Worldwide US">
-                  <div class="bg-img-overlay text-center">
-                  <h3 class="bg-img-title">
-                    <a href="./concern" class="header text-white text-decoration-none">READ MORE</a>
-                  </h3>
-                  </div>
-            </div>
-            <div class="info concern">
-              <h2 class="header">CONCERN WORLDWIDE US</h2>
-                <div class="container w-75">
-                <p class="text-right">A triggered email campaign completed as a part of an eight week 
-                  fellowship as a Marketing Technology Fellow under Concern Worldwide US.</p>
-                </div>
-              <a class="btn btn-primary header" href="./concern" role="button">Read More</a>
-          </div>
-      </div>
-          <!-- opsarmy  -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-                  <img class="bg-img" src="img/opsarmy-front.png" alt="OpsArmy">
-                  <!-- <div class="bg-img-overlay text-center">
-                  <h3 class="bg-img-title">
-                    <a href="./opsarmy" class="header text-white text-decoration-none">READ MORE</a>
-                  </h3>
-                  </div> -->
-            </div>
-            <div class="info opsarmy">
-              <h2 class="header">OPERATIONS ARMY</h2>
-                <div class="container w-75">
-                <p class="text-right">Work completed as part of an eight week Product Design
-                  intern as a Marketing Technology Fellow under startup, OpsArmy.
-                </p>
-                </div>
-              <a class="btn btn-primary header">Coming Soon</a>
-          </div>
-      </div>
+        
+          <label class="required-field" for="email">Email</label><br>
+          <input type="email" class="w-100" id="email" name="Email" required><br>
+        
+          <label class="required-field" for="subject">Subject</label><br>
+          <input type="text" class="w-100" id="subject" name="Subject" required><br>
+        
+          <label class="required-field" for="message">Message</label><br>
+          <textarea id="message" class="w-100" name="Message" rows="7" cols="30" required></textarea><br>
+        
+          <input type="submit" value="Submit" class="btn btn-primary header" style="color:white; background-color: black; border:none;">
+        </form>
+        </div>
+        <div class="col-md-6 p-lg-5 mx-start my-5">
+          <a href="img/me.png" data-lightbox="me" data-title="My typical workspace and I!">
+            <img src="img/me.png" alt="It's me, hi!" class="img-fluid">
+          </a>
+        </div>
+    </div>
   </div>
 </section>
 
@@ -244,7 +152,6 @@
       </script>  
 
 </main>
-
 <!-- Footer -->
 <div class="footer container">
   <footer class="py-3 my-4">
@@ -276,7 +183,7 @@
       <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">made by </a>
       <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./">ERYNN GUTIERREZ</a>
        © 2023</p>
-  </footer>
-</div>
+      </div>
+<script src="js/lightbox.js"></script>
 </body>
 </html>
