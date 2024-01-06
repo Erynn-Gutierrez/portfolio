@@ -1,6 +1,6 @@
 /* Default Header Font */
 * {
-    font-family: Quattrocento Sans;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 p { font-size: 14.5pt;}
@@ -61,6 +61,6 @@ a.btn.btn-secondary {
   }
 
   #erynn-name {
-    height:1.5em;
-    width: auto;
+    height:1.5em !important;
+    max-width: auto;
   }
