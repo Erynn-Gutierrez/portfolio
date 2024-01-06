@@ -1,20 +1,12 @@
-/* Nav Bar */
-.navbar-brand { 
-    font-family: Federo;
-    font-size: 25pt;
-}
-.nav-item { font-family: Helvetica Neue; }
-
-/* About Snippet */
-span.rotate, .subheader
-{
-    font-family: Cormorant Garamond;
-}
-
 /* Default Header Font */
-.header, #footer-home {
-    font-family: Federo;
+* {
+    font-family: Quattrocento Sans;
 }
+
+p { font-size: 14.5pt;}
+
+
+a {color:black;}
 
 /* Default Primary Button */
 a.btn.btn-primary {
@@ -66,4 +58,9 @@ a.btn.btn-secondary {
     cursor: pointer;
     display: none;
     transition: opacity 0.3s ease;
+  }
+
+  #erynn-name {
+    height:1.5em;
+    width: auto;
   }

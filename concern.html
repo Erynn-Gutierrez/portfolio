@@ -8,13 +8,18 @@
   <link rel="stylesheet" href="css/external.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="css/lightbox.css">
   <title>Concern Worldwide US | Erynn Gutierrez</title>
-  <link rel="icon" type="image/png" href="img/EG.png"/>
+  <link rel="icon" type="image/png" href="img/EKG.png"/>
   <style>
+    .header {font-family: Federo;}
+
+    a {color:black;}
+
+    h5 { font-weight: bolder;}
+
     .brief {
       display: inline-block;
     }
@@ -78,13 +83,13 @@
     lightbox.option({
       'resizeDuration': 100
     })
-</script>
+  </script>
 </head>
 <body>
 <!-- Nav Bar goes here -->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./">ERYNN GUTIERREZ</a>
+    <a class="navbar-brand" href="./"><img src="img/EKG.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -97,7 +102,10 @@
           <a class="nav-link active" aria-current="page" href="./identity">Identity</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-2023.pdf" target="_blank">Resume</a>
+          <a class="nav-link" href="./voice">Voice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pdf/Gutierrez.Erynn_Resume.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./identity#connect">Connect</a>
@@ -114,6 +122,9 @@
           <ul class="nav flex-column" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0">
             <li class="nav-item">
               <a class="nav-link" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-overview">Project Overview</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#research-ideation">Research & Ideation</a>
@@ -162,10 +173,10 @@
           <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
               <div class="col-md-12 my-2">
                   <div class="fw-normal">
-                      <h1 class="display-1 header">CONCERN WORLDWIDE US</h1>
+                      <h1 class="display-1 header">STRENGTHENING DONOR RELATIONSHIPS</h1>
                   </div>
                   <h3 class="subheader fw-normal text-right">
-                      Ending extreme poverty, whatever it takes.
+                      How can we engage the experiences of active online donors?
                   </h3>
               </div>
             </br>
@@ -183,25 +194,24 @@
                         <div class="row">
                             <div class="col-12">
                                 <p class="text-end">
-                                    I aimed to develop a new email series that is triggered
-                                    upon a subscriber's interactions with Concern's articles on their
-                                    new website. Essentially, when a subscriber reads an article about
-                                    Livelihoods & Financial Empowerment, they will be automatically entered into a targeted
-                                    email series that details the article they read alongside previous donor
-                                    history, to further urge them to donate towards Livelihoods & Financial Empowerment.
+                                    Personalizing the end-to-end engagement process and written material of a triggered email campaign based on
+                                    donors' interactions with articles posted on the Concern Worldwide US website to
+                                    optimize engagement from a diverse set of donors.
                                 </p>
-                                <table class="table text-center">
+                                <table class="table">
                                     <thead>
                                         <tr>
                                             <th scope="col">ROLE</th>
                                             <th scope="col">TEAM</th>
+                                            <th scope="col">SKILLS</th>
                                             <th scope="col">TIME</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>UI Design/Testing<br>User Research<br>Writing<br>Copywriting</td>
-                                            <td>Jocelyn Carlisle<br>Camille Marinelli<br>Dan Rocklin<br>Candance Patel-Taylor</td>
+                                            <td>Marketing Technology Fellow</td>
+                                            <td>MarComms</td>
+                                            <td>UI Design<br>User Research<br>Writing<br>Copywriting</td>
                                             <td>8 Weeks</td>
                                         </tr>
                                     </tbody>
@@ -212,56 +222,35 @@
                 </div>
       </section>
 
+      <div class="row mx-auto" id="project-overview"></div>
 
       <!-- Research and Ideation -->
           <div class="row mx-auto" id="research-ideation"></div>
               <h2 class="header text-center">RESEARCH & IDEATION</h2>
-              <section id="about">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-9 text-start mx-auto">
+              <section id="about">                    
+                <div class="col-9 text-start mx-auto">
                       <h5 class="text-start" id="email-3">About Concern Worldwide US</h5>
                       <p>
         
                         Concern Worldwide US is a non-profit organization dedicated to transforming lives and communities across the globe. With a steadfast commitment to humanitarian efforts, Concern Worldwide US employs innovative strategies and collaborative partnerships to alleviate poverty, provide emergency relief, and promote sustainable development within vulnerable communities long after Concern's support.
                         </p>
-                        <p>
+                        <!-- <p>
                         At the heart of Concern Worldwide US's mission is the unwavering belief in the potential of every individual. By fostering a sense of belonging and empowerment, the organization aims to create a world where all people have the opportunity to thrive and flourish. This vision drives Concern Worldwide US's dedication to forging lasting change and delivering vital support to those in need.
                       </p><p>
                         Concern's vision is a world where compassion, resilience, and solidarity intersect to create a global community that is resilient in the face of adversity. Through collaboration, innovation, and a deep-rooted sense of purpose, Concern Worldwide US endeavors to create a brighter and more equitable future for all.
-                      </p>
+                      </p> -->
                       </div>
               </section>
                 <section id="the-problems">
-                    <div class="col-9 text-start mx-auto">
+                <div class="col-9 text-start mx-auto">
                 <h5>The Problems</h5>
                 <p>
-                  In 2021, Contributions & Non-Governmental Grants and Special 
-                  Events accounted for less than 6.8% of Concern Worldwide US' (CWUS) 75.1 million
-                  dollar revenue. Around 90% came from government grants, 3% from Concern Worldwide, 
-                  and 1% from other sources. While government funding is strictly allocated 
-                  based on predetermined purposes, non-governmental grants 
-                  offer flexibility to address current needs, making them essential
-                  to serving the then 24 countries under CWUS.
+                  In June 2023, CWUS launched a new website. From visual design to urls to links,
+                  everything was completely new. Yet, with the revamping of their
+                   old website came the implementation of a new tracking pixel, which 
+                   resulted in inaccuracy in recent user data (i.e. page
+                  views on website articles, and subscribers who had engaged with them) on their CRM, Salesforce.
                 </p>
-                <p>
-                  Yet, with rising needs in the now 25 countries they serve as of 2023,
-                  CWUS has a greater need for supplementary, non-governmental funds in order
-                  to properly aid the most vulnerable populations of the world. Further,
-                  with the revamping of their old website came the implementation of a new 
-                  tracking pixel, which resulted in inaccuracy in recent user data (i.e. page
-                  views).
-                </p>
-              </div>
-              <br>
-              <div class="row justify-content-center">
-                <div class= "col-6 text-start">
-                    <h6 class="text-center">Concern Worldwide US Support and Revenue (71.4 million), 2021</h6>
-                    <a href="img/2021-support.png" data-lightbox="Support and Revenue" data-title="Concern Worldwide US Support and Revenue (71.4 million), 2021">
-                      <img src="img/2021-support.png" alt="transparency" class="img-fluid">
-                    </a>
-                    <p class="caption">Source: Concern Worldwide US Annual Report, 2021</p>
-                </div>
               </div>
                 </section>
             <!-- The Goal -->
@@ -269,12 +258,12 @@
                 <div class="row">
                     <div class="col-9 text-start mx-auto">
                     <h5>The Goal</h5>
-                    <p>We aimed to create a framework for a new email campaign that bridged
+                    <p>I aimed to create a framework for a new email campaign that bridged
                       donor history from Salesforce to viewer analytics from the new website.
                       This way, we can tailor email content to match that of the donor's interests
                       and giving history, to further personalize the donation experience --
                       ultimately with the goal of increasing donations as well as
-                      utilizing two of Concern's most integral platforms to 
+                      utilizing two of Concern's most integral platforms - email and their website - to 
                       obtain non-governmental donations.
                     </p>
                     </div>
@@ -798,8 +787,9 @@
     </ul>
     <p class="text-center text-muted">
       <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">coded and designed by </a>
-      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./">ERYNN GUTIERREZ</a>
-       © 2023</p>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./"><img src="img/ERYNN-header.png" id="erynn-name" alt="ERYNN Header"></a>
+       © 2024
+    </p>
       </footer>
 
 </div>

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/external.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
+  <title>Voting Interface | Erynn Gutierrez</title>
+  <link rel="icon" type="image/png" href="img/EKG.png"/>
+  <style>
+     .header {font-family: Federo;}
+
+     a {color:black;}
+
+     h5 { font-weight: bolder;}
+
+    .brief {
+      display: inline-block;
+    }
+
+    section { padding-bottom: 5em; }
+
+    #scrollspy {
+        position:fixed;
+        right:0;
+        text-align:right;
+    }
+
+    #scrollspy .nav-link {
+    color: #000000;
+}
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 576px) {
+      .this {
+        order: 1;
+      }
+
+      .that {
+        order: 2;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 758px) {
+
+      #scrollspy {
+        visibility:hidden;
+      }
+
+    }
+
+    .comp-img {
+      width: 75%;
+      height: auto;
+    }
+
+    #scrollspy {
+        font-size: 10pt;
+    }
+
+    .nav-link {color:black;}
+
+    .caption {font-size: 9pt;}
+
+    .display-1 {font-family:Federo;}
+
+    #list-item {font-size: 13pt;}
+
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 100
+    })
+</script>
+</head>
+<body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./"><img src="img/EKG.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./identity">Identity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./voice">Voice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pdf/Gutierrez.Erynn_Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./identity#connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Scrollspy -->
+  <div class="container whole">
+    <div class="row">
+      <div class="col-auto">
+        <div id="scrollspy">
+          <ul class="nav flex-column" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0">
+            <li class="nav-item">
+              <a class="nav-link" href="#second-chance">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#research">Research</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-problems">The Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#the-goal">The Goal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ideation">Ideation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#choices">Choices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#flow-diagram">Flow Diagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paper-prototype">Paper Prototype</a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#med-fi">Med-Fi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#final-design">Final Design</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" id="second-chance">
+        <section id="section-1">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+              <div class="col-md-12 my-2">
+                  <div class="fw-normal">
+                      <h1 class="display-1 header">GENERAL ELECTION VOTING INTERFACE</h1>
+                  </div>
+                  <h3 class="subheader fw-normal text-right">
+                    Helping Californians vote from the comfort of home.
+                  </h3>
+              </div>
+            </br>
+            </br>
+            </br>
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1">
+                      <a href="img/voting-prototype.svg" data-lightbox="voting" data-title="Voting Prototype">
+                        <img src="img/voting-prototype.svg" alt="voting-prototype" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 that">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-end">
+                                    We aimed to develop an online voting interface that 
+                                    enhances the accessibility of the democratic process. 
+                                    Through a visual design akin to the traditional ballot,
+                                    and simplifcation of the voting flwo, the 
+                                    interface aims to mitigate barriers in
+                                    accessibility and readability, 
+                                    ensuring that every citizen can effortlessly
+                                     and confidently participate in the voting experience.
+                                </p>
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ROLE</th>
+                                            <th scope="col">TEAM</th>
+                                            <th scope="col">TIME</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UI Design/Testing</td>
+                                            <td>Ryan Baralt<br>Asli Kocak<br>Fa Taepaisitphongse</td>
+                                            <td>4 Weeks</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </section>
+
+      <!-- Research -->
+          <div class="row mx-auto" id="research"></div>
+              <h2 class="header text-center">RESEARCH</h2>
+                <section id="the-problems">
+                    <div class="col-9 text-start mx-auto">
+                <h5>The Problem</h5>
+                <p>
+                    Voting in the United States presents significant challenges,
+                     as citizens are faced with traditional processes that hinder
+                      access to what should be free democratic exercise. The 
+                      current options, such as attending polling places or navigating
+                       through intricate mail-in voting procedures, contribute to 
+                       an environment where individuals encounter obstacles such as
+                       poll watchers and long lines or failing to return ballots.
+                       Additionally, the existing vote-by-mail system relies on paper
+                       forms susceptible to errors, leading to the unfortunate outcome
+                        of spoiled ballots.
+                </p>
+              </div>
+              <div class="row justify-content-center">
+                <div class= "col-6 text-start">
+                  <figure class="figure">
+                    <a href="img/Fair Fight Infographic.png" data-lightbox="Fair Fight Infographic" data-title="Fair Fight Voter Supression Infographic">
+                      <img src="img/Fair Fight Infographic.png" alt="transparency" class="img-fluid">
+                    </a>
+                    <figcaption class="figure-caption">Systemic Voter Supression, Fair Fight</figcaption>
+                  </figure>
+                </div>
+              </div>
+                </section>
+
+            <!-- The Goal -->
+            <section id="the-goal">
+              <div class="row">
+                  <div class="col-9 text-start mx-auto">
+                  <h5>The Goal</h5>
+                  <p>
+                    How can we create a transparent and accessible platform for eligible voters?
+                    We hoped to revolutionize the democratic exercise in the USA 
+                    by providing a seamless, secure, and user-friendly platform 
+                    that eliminates barriers associated with traditional voting methods. <br><br>
+                    Through an online voter interface, we hoped to enhance
+                     accessibility, efficiency, and accuracy in the voting process, 
+                     thereby empowering citizens to exercise their democratic right
+                      with ease and confidence. We hoped to address challenges 
+                      related to in-person voting, convoluted mail-in procedures,
+                       poll watcher interference, long lines, and ballot spoilage,
+                        ushering in a new era of inclusive and efficient voting for all eligible citizens.
+                      
+                  </p>
+                  </div>
+              </div>
+            </section>
+
+            <section id="ideation">
+              <h2 class="header text-center">IDEATION</h2>
+              <div class="row">
+              <div class="col-9 text-start mx-auto">
+              <h5 id="choices">Choices</h5>
+              <p>
+                Our team started with deciding on important considerations with the voting process.
+                We asked: how could we shape the online voting process to be simple and accessible to all citizens?
+              </p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table-light" scope="col" style="width: 25%;">SUMMARIES</th>
+                    <th class="table-light" scope="col" style="width: 75%;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-secondary" style="width: 25%;">Current Implementation</td>
+                    <td class="table-secondary" style="width: 75%;">
+                      The level of detail provided for initiatives on U.S. ballots can vary depending on the state/local election practices. In general, when voters receive their ballots, they are given the text of the proposed initiative, along with an explanation. These summaries are often long and are formatted as an unreadable long-form paragraph, without clear representation of what a YES versus NO vote is.
+                      <br><br>
+                      <figure class="figure">
+                      <a href="img/initiatives.png" data-lightbox="voting" data-title="Actual initiatives from the 2016 General Election in San Luis Obispo County, California.">
+                        <img src="img/initiatives.png" alt="initiatives" class="img-fluid">
+                      </a>
+                      <figcaption class="figure-caption">Actual initiatives from the 2016 General Election in San Luis Obispo County, California.</figcaption>
+                    </figure>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">There should be short summaries at an 8th-grade or even lower level available. We should make sure that citizens reading at the minimum comprehension level can understand the implications of the vote is. Especially for the proposition section, we should provide distinct reasoning behind a yes or no vote.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="table-secondary" scope="col" style="width: 25%;">FACT-CHECKING</th>
+                    <th class="table-secondary" scope="col" style="width: 75%;"></th>
+                  </tr>
+                  <tr>
+                    <td class="table-light" style="width: 25%;">Current Implementation</td>
+                    <td class="table-light" style="width: 75%;">The process of fact-checking initiatives and candidate statements on U.S. ballots primarily falls on the responsibility of voters, advocacy groups, and the media. Candidate statements in voter information guides are often submitted by the candidates themselves or their campaigns. While there may be guidelines for the inclusion of statements, fact-checking by election officials is not always a standard practice.</td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">Toggle the fact-checking feature when the user is setting up their experience; why not use the resources we have online to check the truth of such statements? We can make links to the candidate’s website always available via the candidate’s profile, where they can learn more about their stance - which may or may not have been fact checked.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="table-secondary" scope="col" style="width: 25%;">INTERLOCK</th>
+                    <th class="table-secondary" scope="col" style="width: 75%;"></th>
+                  </tr>
+                  <tr>
+                    <td class="table-light" style="width: 25%;">Current Implementation</td>
+                    <td class="table-light" style="width: 75%;">Rules regarding the use of phones while voting or voting from home vary by state. In many states, the use of cell phones and electronic devices is prohibited within a certain distance of the voting stations. For example, in Texas, individuals are not allowed to use wireless communication devices within 100 feet of the voting stations, whereas in Connecticut, such laws do not exist. Voters can bring handwritten notes, or a sample ballot to refer to while vote.</td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">There should be no forced interlock to check if users have read statements and/or ballot initiatives. There should also be no locked screen. Users should be able to seek external resources/sites as they wish while they vote. We also hope to provide shortened candidate priorities (ie. Through hashtags like #ForThis), add links to short form videos to watch a quick 30 second video about it to provide more context and understand what their vote for this person actually means.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="table-secondary" scope="col" style="width: 25%;">PROTEST VOTES</th>
+                    <th class="table-secondary" scope="col" style="width: 75%;"></th>
+                  </tr>
+                  <tr>
+                    <td class="table-light" style="width: 25%;">Current Implementation</td>
+                    <td class="table-light" style="width: 75%;">Protest votes can take many different forms:
+                      <ul>
+                        <li>Blank ballots</li>
+                        <li>Null ballots</li>
+                        <li>Spoiled ballots</li>
+                        <li>Votes for a fringe candidate or party, or a less preferred candidate or party</li>
+                        <li>Organized protest votes</li>
+                        <li>Declined ballots</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">On an online platform, “protest” votes are intentionally made by the user, such as writing in a name of a different “candidate”, or “None/Opt out”. They should be counted despite them not having a systematic advantage.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="table-secondary" scope="col" style="width: 25%;">ORGANIZATION</th>
+                    <th class="table-secondary" scope="col" style="width: 75%;"></th>
+                  </tr>
+                  <tr>
+                    <td class="table-light" style="width: 25%;">Current Implementation</td>
+                    <td class="table-light" style="width: 75%;">The order in which candidates appear on the ballots for general elections is typically determined by state election laws.
+                      This can vary from state to state and within state, ranging from ordering alphabetically to party primacy.
+                      Further, candidate selection is usually compacted to one to two pages, as seen below.
+                      <br><br>
+                      <figure class="figure">
+                      <a href="img/candidates.png" data-lightbox="voting" data-title="Candidate Selection section from the 2016 General Election in San Luis Obispo County, California.">
+                        <img src="img/candidates.png" alt="candidates" class="img-fluid">
+                      </a>
+                      <figcaption class="figure-caption">Actual initiatives from the 2016 General Election in San Luis Obispo County, California.</figcaption>
+                    </figure>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">Randomization within party and name is important as to not cause outcry or complaints from dis/advantage between candidates. Each candidate/initiative should appear on one page, rather than having different positions/initiatives smushed together on one page. This reduces overwhelm and distraction for the user.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="table-secondary" scope="col" style="width: 25%;">IDENTIFICATION</th>
+                    <th class="table-secondary" scope="col" style="width: 75%;"></th>
+                  </tr>
+                  <tr>
+                    <td class="table-light" style="width: 25%;">Current Implementation</td>
+                    <td class="table-light" style="width: 75%;">
+                      <div class="row justify-content-center">
+                        <div class="col-8">
+                        <figure class="figure">
+                          <a href="img/Voter identification dashboard.png" data-lightbox="Voter ID laws by number of states over time (2000-2020)" data-title="Voter ID laws by number of states over time (2000-2020)">
+                            <img src="img/Voter identification dashboard.png" alt="transparency" class="img-fluid">
+                          </a>
+                          <figcaption class="figure-caption">Voter ID laws by number of states over time (2000-2020), MIT Election Data + Science Lab</figcaption>
+                        </figure>
+                    </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-success" style="width: 25%;">Our Proposed Solution</td>
+                    <td class="table-success" style="width: 75%;">There is a “new” implementation during voter registration (which is assumed to have happened by Voting Day) such that users obtain a unique temporary Identification Code after successfully registering to vote. This is only used for voting (and never used again).</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+            </section>
+
+            <section>
+              <div class="row">
+                <div class="col-9 mx-auto">
+                    <h5 class="mx-auto" id="flow-diagram">Flow Diagram</h5>
+                    <p>
+                      With our flow diagram, we decided to break the voting
+                      process into different sections: Candidate Selection, Candidate Review,
+                      Proposition Selection, Proposition Review, and finally,
+                      Ballot Review. By adding in these review processes in 
+                      between selection, we hope to aid voters by ensuring 
+                      that they ae given the opportunity to check their ballot as
+                      they go. This also helps to break down information and
+                      minimizes distraction from other selections/sections of the ballot.
+                    </p>
+                      <a href="img/Voting Interface Flow Diagram.png" data-lightbox="Voting Interface Flow Diagram" data-title="Flow Diagram">
+                        <img src="img/Voting Interface Flow Diagram.png" alt="transparency" class="img-fluid">
+                      </a>
+                  </div>
+            </div>
+            </section>
+
+          <section>
+            <div class="row">
+                <div class="col-9 mx-auto">
+                  <h5 class="mx-auto" id="paper-prototype">Paper Prototype</h5>
+                  <h6>Introduction Flow</h6>
+                  <div class="row">
+                    <div class="col d-flex">
+                      <a href="img/welcome-paper.png" data-lightbox="review-candidates-paper">
+                        <img src="img/welcome-paper.png" alt="Welcome Paper Prototype" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col d-flex">
+                      <a href="img/id-paper.png" data-lightbox="Verify ID Paper Prototype">
+                        <img src="img/id-paper.png" alt="Verify ID Paper Prototype" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col d-flex">
+                      <a href="img/settings-paper.png" data-lightbox="Settings Paper Prototype">
+                        <img src="img/settings-paper.png" alt="Settings Paper Prototype" class="img-fluid">
+                      </a>
+                    </div>
+                  </div>
+                   <p>
+                    With our initial paper prototype design, we aimed to keep
+                    information to as close to the default page while keeping
+                    the design as reminiscent of a paper ballot as much as possible.
+                  </p>
+                  <br>
+                    <h6>Candidate and Proposition Selection</h6>
+                    <div class="row">
+                      <div class="col d-flex">
+                        <a href="img/hor-paper.png" data-lightbox="houseofreps">
+                          <img src="img/hor-paper.png" alt="House of Reps Voting Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/presidents-paper.png" data-lightbox="Presidents Voting Paper Prototype">
+                          <img src="img/presidents-paper.png" alt="Paper Prototype 2" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/proposition-paper.png" data-lightbox="Propositions Paper Prototype">
+                          <img src="img/proposition-paper.png" alt="Propositions Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                      <p>
+                        Considering the large amount of information given to voters,
+                        we hoped that by implementing a design where users would
+                        have to click to learn more, whether through enlargening
+                        the Candidate View screen by clicking on a candidate, or
+                        toggling the expand button for propositions, that we could satisfy
+                        the need for any voter, whether or not they are looking for
+                        detailed information or looking to speed through the ballot.
+                        We also implemented an opt out option for users that may
+                        want to abstain from voting on a certain candidate or proposition.
+                      </p>
+                    </div>
+                    <br>
+                    <h6>Review Selections</h6>
+                    <div class="row">
+                      <div class="col d-flex">
+                        <a href="img/review-candidates-paper.png" data-lightbox="review-candidates-paper">
+                          <img src="img/review-candidates-paper.png" alt="Review Candidates Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/review-propositions-paper.png" data-lightbox="Review Propositions Paper Prototype">
+                          <img src="img/review-propositions-paper.png" alt="Review Propositions Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/review-all-paper.png" data-lightbox="Review All Selections Paper Prototype">
+                          <img src="img/review-all-paper.png" alt="Review All Selections Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <p>
+                      In terms of reviewing, we decided to not give users the permission
+                      to view candidate statements/proposition details outside of the selction process;
+                      We will only grant the opportunity to redirect to a specific
+                      candidate/proposition in the review section.
+                    </p>
+                </div>
+                <div class="row">
+                  <div class="col-9 mx-auto">
+                      <p class="mx-auto" id="paper-evaluation">Paper Evaluation</p>
+                      <p>
+                        From our paper prototype user tests, we found that users
+                        were able to follow the voting process with no assistance.
+                        Users could autonomously find and read candidate statements
+                        and cast their vote, as well as find, read, and vote for 
+                        initiatives. However, improvements were needed to subside
+                        user painpoints, as shown below.
+                      </p>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="table-danger" scope="col" style="width: 25%;">Feature</th>
+                            <th class="table-secondary" scope="col" style="width: 75%;">Pain Point</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="table-danger" style="width: 25%;">Chatbot</td>
+                            <td class="table-secondary" style="width: 75%;">
+                              All of our users failed to identify the chatbot on their
+                              own accord. We had to guide them to find it.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="table-danger" style="width: 25%;">Candidate Selection</td>
+                            <td class="table-secondary" style="width: 75%;">
+                              Users expressed that actions for selecting a candidate 
+                              to view its details, versus selecting to
+                              cast a vote for a candidate were unclear.
+                            </td>
+  
+                          </tr>
+                          <tr>
+                            <td class="table-danger" style="width: 25%;">Visual Design of Candidate Selection Page</td>
+                            <td class="table-secondary" style="width: 75%;">
+                              Some users expressed that the amount of information shown on
+                              the candidate selection page upon load was a lot to see
+                              at once. They suggested that this should be reduced visually. 
+                              Further, one user wondered how the page would be loaded since
+                              seeing a certain candidate’s statement/information shouldn't
+                              be the first thing that the user sees.
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div> 
+              </div>
+            </div>
+        </section>
+      
+      <section>
+        <div class="row">
+            <div class="col-9 mx-auto">
+                <h5 class="mx-auto" id="med-fi">Med-fi Prototype</h5>
+                <p>
+                  From our paper prototype tests, we moved forward to implement a design that
+                  resolved user issues. Below are the most prominent changes for this
+                  stage's iteration.
+                </p>
+                <div class="d-flex">
+                  <div class="col-md-5 mx-start">
+                      <a href="img/lofi-chatbot.gif" data-lightbox="lofi chatbot" data-title="Introducing the Chatbot">
+                          <img src="img/lofi-chatbot.gif" class="img-fluid d-block">
+                      </a>
+                  </div>
+                  <div class="col-md-6 mx-auto">
+                      <h4>Introducing the Chatbot</h4>
+                      <p>
+                        We decided to add an introductory flow after the ID verification process
+                        that shows the user where the chatbot and settings are located
+                        while they go through the voting process. This ensures that
+                        users who may need to change/toggle accessibility settings
+                        (such as the Text-to-Speech or Read Aloud option) can
+                        do so at any point of the voting process, as well as for
+                        any user seeking assistance on voting information to do so via
+                        the chatbot.
+                      </p>
+                  </div>
+              </div>
+              <br>
+                <div class="d-flex">
+                    <div class="col-md-5 mx-start">
+                        <a href="img/lofi-candidate.gif" data-lightbox="lofi candidate selection" data-title="Toggle Candidate Information">
+                            <img src="img/lofi-candidate.gif" class="img-fluid d-block">
+                        </a>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                        <h4>Toggle Candidate Information</h4>
+                        <p>
+                          To clear up user confusion with selecting a candidate
+                          to view or vote for and ease users' sudden overexposure to 
+                          information at once, we decided to take on a new design.
+                          Much like a paper ballot, this new design simply shows candidates'
+                          name next to a checkbox for voters to mark their vote. Users are able to
+                          access more information about a candidate, such as their
+                          statement and website, by toggling the expanded view
+                          via the carrot at the end of the candidate's box. Or, for the
+                          user who doesn't care for statements and the like, can mark their
+                          vote and move on.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex">
+                  <div class="col-11 mx-start">
+                      <p class="mx-auto" id="paper-evaluation">Med-Fi Evaluation</p>
+                      <p>
+                        From our paper prototype user tests, we found that users had issues with:
+                      </p>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="table-danger" scope="col" style="width: 25%;">Feature</th>
+                            <th class="table-secondary" scope="col" style="width: 75%;">Pain Point</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="table-danger" style="width: 25%;">Navigating Back to Ballot Propositions</td>
+                            <td class="table-secondary" style="width: 75%;">
+                              One user pointed out that the ballot propositions
+                              did not allow users to return to a specific initiative
+                              in the case that they would want to refresh the
+                              details behind the initiative. (Note that users
+                              are still able to change their vote on the Proposition
+                              review page.)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="table-danger" style="width: 25%;">Voting Instructions</td>
+                            <td class="table-secondary" style="width: 75%;">
+                              Though not as much as a "pain point", users agreed that
+                              including more direct language in voting instructions
+                              wouldn't hurt, seeing as this is an official interface
+                              and reflective as a government document of sorts; implementing
+                              blunt definitions and explanations would help with
+                              preventing confusion, as well.
+                            </td>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+              <!-- Final Design -->
+              <section>
+                <div class="col-9 text-start mx-auto">
+                    <h5 class="mx-auto" id="final-design">Final Design</h5>
+                    <div class="row">
+                      <p>
+                        Our biggest choice with our final design was adding color to our interface,
+                        We wanted maintain the simplicity of our previous iterations which is why
+                         we went with a "government" navy blue to emphasize trust
+                        and recognition as an official voting interface, contrasting it with an orange, its complement, to allow for
+                         high contrast between screen elements and text. 
+                        This minimalistic aesthetic is intended to streamline
+                        the voting process, reducing visual clutter to minimize cognitive load. 
+                      </p>
+                      <p>
+                       The following are the features, some refurbished, others new, that encapsulate
+                       our last round of user testing and fulfill our ultimate goal of simplicity
+                       and accessibility in our online voting interface.
+                      </p>
+                      <h4 class="feature">Section Introductions</h4>
+                      <div class="col d-flex">
+                        <a href="img/Welcome page.png" data-lightbox="welcome-page">
+                          <img src="img/Welcome page.png" alt="Welcome Page" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/Candidate Selection Intro.png" data-lightbox="Settings Paper Prototype">
+                          <img src="img/Candidate Selection Intro.png" alt="Settings Paper Prototype" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="col d-flex">
+                        <a href="img/Proposition Selection Welcome.png" data-lightbox="Proposition Selection Welcome">
+                          <img src="img/Proposition Selection Welcome.png" alt="Proposition Selection Welcome" class="img-fluid">
+                        </a>
+                      </div>
+                      <p>
+                        <br>
+                        We decided to add introduction pages at the beginning of
+                        each section for the sake of clarity. At the beginning of
+                        the flow, we add a "Did You Register to Vote?"
+                        page to explain our theoretical online ID verification that
+                        only works if the user has already registered to vote
+                        in advance. As for the candidate and proposition pages,
+                        we give short purposes of each section and provide crucial
+                        information about candidate party affiliations, statements,
+                        and propositions that would appear in the offical voter guide
+                        or paper ballot. 
+                      </p>
+                    </div>
+                  <div class="d-flex">
+                    <div class="col-md-6 mx-start">
+                      <h4 class="feature">Candidate Write-in</h4>
+                      <p>
+                        This feature was definitely the hardest to get going, but
+                        I challenged myself in learning how to prototype this interaction
+                        on Figma; and after a lot of arrows and character controls, I did it!
+                        Any of our group members' names can be inputted into the
+                        write-in (for tesitng purposes, of course.)
+                        To follow the affordances of the paper ballot,
+                        which allow write-ins, we implemented a type in write-in
+                        box for users, in the case that they wouldn't want to
+                        opt out or vote for a candidate.
+                      </p>
+                  </div>
+                    <div class="col-md-5 mx-auto my-auto">
+                        <a href="img/write-in.gif" data-lightbox="lofi chatbot" data-title="Candidate Write-in">
+                            <img src="img/write-in.gif" class="img-fluid d-block">
+                        </a>
+                    </div>
+                </div>
+                <br> 
+                <div class="d-flex">
+                  <div class="col-md-6 mx-start">
+                    <h4 class="feature">Skipping/Returning Back to Propositions</h4>
+                    <p>
+                      One observation from a user test was interesting: they attempted
+                      to go from one proposition to another by clicking on their
+                      desired proposition on the progress bar. I decided to implement
+                      this as a way for users to skip over propositions, but only in the case
+                      where they have already cast a vote up to the most recently submitted "Yes/No".
+                      For instance, if there last vote was for propositions 60, they can return
+                      to view any proposition before 60. This implementation is interesting as it
+                      ensures that users are reading what their vote truly implies.
+                    </p>
+                </div>
+                  <div class="col-md-5 mx-auto my-auto">
+                      <a href="img/proposition return.gif" data-lightbox="proposition review return" data-title="Proposition Review Return">
+                          <img src="img/proposition return.gif" class="img-fluid d-block">
+                      </a>
+                  </div>
+              </div>
+                <br> 
+                <div class="d-flex">
+                  <div class="col-md-6 mx-start">
+                    <h4 class="feature">Reviewing Proposition Return</h4>
+                    <p>
+                      In response to the earlier user painpoint, we implemented
+                      a redirect back to the original proposition, where the user
+                      will be able refresh their knowledge on the details of a
+                      proposition once they reach review and beyond.
+                    </p>
+                </div>
+                  <div class="col-md-5 mx-auto my-auto">
+                      <a href="img/proposition review return.gif" data-lightbox="proposition review return" data-title="Proposition Review Return">
+                          <img src="img/proposition review return.gif" class="img-fluid d-block">
+                      </a>
+                  </div>
+              </div>
+              <br> 
+              <div class="d-flex">
+                <div class="col-md-6 mx-start">
+                  <h4 class="feature">Submission and Confirmation</h4>
+                  <p>
+                    With submission, we added a warning pop-up that confirms
+                    whether a user is finished casting their vote or not. Giving
+                    users another chance to review their selections subtly reminds
+                    the user of the importance of their vote and ensures no mistakes
+                    (of the conscience, I guess, since there can't be an electronic
+                    spoiled ballot) on their ballot.
+                  </p>
+              </div>
+                <div class="col-md-5 mx-auto my-auto">
+                    <a href="img/confirm-vote.gif" data-lightbox="confirm vote" data-title="Confirmation and Submission">
+                        <img src="img/confirm-vote.gif" class="img-fluid d-block">
+                    </a>
+                </div>
+            </div>
+              </div>
+              </section>
+
+              <section>
+                <div class="row">
+                  <div class="col-9 mx-auto">
+                      <h5 class="mx-start" id="reflections">Reflections</h5>
+                      <p>
+                        Throughout the design process, I not only learned a lot
+                        about how to configure the different features on Figma 
+                        such as with components and auto-layout, but also how to design
+                        in a way that emphasizes accessibility.
+                        I also learned about the many very intricate considerations
+                        when it comes to making an interface with such legal implications,
+                        while making it to appeal and be accessible to a very varied audience.
+                        Most of our group conversations centered around how to
+                        make this website safe and secure and accessible to as
+                        many as possible, without being politically illogical 
+                        or unrealistic.
+                      </p>
+                      <p>
+                        Overall, our interface succeeds in our goal of accessibility and simplicity.
+                        It allows for a personalized accessibility settings, 
+                        which helps people with visual impairments, different 
+                        familiarities to the voting system, and languages, which isn't
+                        as easy to implement with in-person voting. 
+                        We allow people to access outside resources to guide their decision while
+                        voting, potentially increasing the number of people who vote from home.
+                        Lastly, the chatbot allows for personal help throughout
+                         the whole voting process, allowing voters to have accurate
+                        information easily available, and vote conscientiously.
+                      </p>
+                      <p>
+                        Though our design was not cyclic, this was intentional
+                        as we aimed to alott users the same privileges that in-person
+                        voters have out of fairness. We attempted to mediate this by
+                        giving users options to go back and review voting decisions
+                         in between sections.
+                      </p>
+                      <p>
+                        I had a great time working on this project, and it was my
+                        favorite of the semester. I thank my team for a great 4 weeks
+                        working together, as well as my Professor Dave Miller, 
+                        and TA, Cass Burns for their guidance through this process.
+                      </p>
+                      <p>
+                        Feel free to view the final and med-fi prototypes 
+                        <a href="https://www.figma.com/proto/PkXLnhoiEqb2AY3Fjeqaxq/ENP-166-(Copy)?page-id=564%3A765&type=design&node-id=956-1264&viewport=1202%2C458%2C0.06&t=5iaIHKBUVFmeDdtK-1&scaling=contain&starting-point-node-id=956%3A1264&show-proto-sidebar=1&mode=design" target="_blank">here</a>.
+                      </p>
+                  </div>
+              </div>
+              </section>
+      </div>
+    </div>
+  </div>
+
+    <!-- Scroll-to-top button -->
+  <a class="scroll-to-top" id="scrollToTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </a>
+
+    <!-- Scroll-to-homepage button -->
+    <a href="./#projects" style= "text-decoration: none; color:black;" class="scroll-to-homepage" id="scrollToHomepageBtn">
+      <i class="bi bi-arrow-left-short" width="25" height="25"></i>Back to My Projects
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  <script>
+    window.addEventListener('scroll', function () {
+      // Show or hide the scroll-to-top button based on scroll position
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      var scrollToHomepageBtn = document.getElementById('scrollToHomepageBtn');
+
+      if (window.scrollY > document.getElementById('section-1').offsetHeight) {
+        scrollToTopBtn.classList.add('active');
+        scrollToHomepageBtn.classList.add('active');
+      } else {
+        scrollToTopBtn.classList.remove('active');
+        scrollToHomepageBtn.classList.remove('active');
+      }
+    });
+
+    // Scroll smoothly to the top of the page when the button is clicked
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    </script>
+
+
+
+<!-- Footer goes here -->
+<div class="footer container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="./identity#connect" class="nav-link px-2 text-muted">Connect</a></li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/erynn-gutierrez/" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/Erynn-Gutierrez" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="mailto:Erynn.Gutierrez@tufts.edu" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-open-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 7.384v5.733l3.479-2.087c.15.275.335.553.558.83l-4.002 2.402A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738l-4.002-2.401c.223-.278.408-.556.558-.831L15 13.117V7.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM7.06.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="text-center text-muted">
+      <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">coded and designed by </a>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./"><img src="img/ERYNN-header.png" id="erynn-name" alt="ERYNN Header"></a>
+       © 2024
+    </p>
+      </footer>
+
+</div>
+<script src="js/lightbox.js"></script>
+</body>
+</html>

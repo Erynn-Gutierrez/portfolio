@@ -6,26 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/external.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
-    <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".rotate").textrotator({
-                animation: "fade",
-                separator: ",",
-                speed: 1000
-            });
-        });
-    </script>
     <title>Erynn Gutierrez</title>
-    <link rel="icon" type="image/png" href="img/EG.png"/>
+    <link rel="icon" type="image/png" href="img/EKG.png"/>
     <style>
       h1 {
           display: inline;
+      }
+
+      #section-1 > div {
+          height: 87vh;
       }
   
       div.bg-image.container {
@@ -67,16 +58,171 @@
       a { 
         color: black; 
         text-decoration: none;
+      }
+
+      #erynn-header {
+          height: 13em;
+          width: auto;
+      }
+
+       #erynn-polaroid {
+          width: 30em;
+          height: auto;
+      }
+      
+      .table.table-borderless {
+        margin-left:-.5em;
+      }
+
+      #projects-png {
+        height: -2em;
+        width: auto;
+      }
+
+      #concern-prototype, #second-chance-prototype, #fruity-treasures-prototype {
+        height: auto;
+        max-width: 95%;
+      }
+
+      #concern-logo {
+        margin-bottom: -15px;
+        height:5.5em;
+        width: auto;
+      }
+
+      #second-chance-logo {
+        margin-bottom: 1em;
+        height:2em;
+        width: auto;
+      }
+
+      .project-details {
+        color: #747474;
+        font-size: .75em;
+      }
+
+      #tufts-logo {
+        height:2em;
+        width: auto;
+        margin-bottom: 1em;
+      }
+
+      .image-container {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      height: 70%;
     }
 
+    .voting-img,
+    .concern-img,
+    .sc-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .voting-img::before,
+    .concern-img::before,
+    .sc-img::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: 0;
+      transition: width 0.35s ease-out;
+      z-index: -1; 
+    }
+
+    .sc-img::before {
+      background-position: -.9em;
+      background-image: url('img/sc-wipe.png');
+      transition: width 0.35s ease-out;
+    }
+
+    .voting-img::before {
+      background-image: url('img/voting-wipe.png');
+    }
+
+    .concern-img::before {
+      background-image: url('img/concern-wipe.png');
+    }
+    
+
+    .voting-img:hover::before,
+    .concern-img:hover::before,
+    .sc-img:hover::before {
+      width: 100%;
+    }
+
+    @keyframes riseIn {
+      from {
+        transform: translateY(50px); 
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    #section-1 .animation-container {
+      animation: riseIn 1s ease-out; /* Adjust the duration and timing function as needed */
+    }
+
+    .hiddenon-load {
+      opacity: 0;
+      transform: translateY(20px); /* Adjust the starting position as needed */
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #sc-title:hover { color:#D4BA71; }
+
+    #concern-title:hover { color:#0B7B51; }
+
+    #voting-title:hover { color:#18325F; }
+    
   </style>
 </head>
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('.hiddenon-load');
+  
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 
+      };
+  
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+  
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./">ERYNN GUTIERREZ</a>
+        <a class="navbar-brand" href="./"><img src="img/EKG.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -89,7 +235,10 @@
               <a class="nav-link" href="./identity">Identity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pdf/Erynn-Gutierrez-Resume-2023.pdf" target="_blank">Resume</a>
+              <a class="nav-link" href="./voice">Voice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pdf/Gutierrez.Erynn_Resume.pdf" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./identity#connect">Connect</a>
@@ -100,105 +249,105 @@
     </nav>
     <main>
     <!-- About Snippet -->
-        <section id="section-1">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-                <div class="col-md-8 p-lg-5 mx-auto my-5">
-                    <div class="fw-normal">
-                        <h1 class="display-1 header">DIGITAL</h1>
-                        <h1 class="display-3"><span class="rotate"> leader, creative, learner, explorer, lover</span></h1>
-                    </div>
-                    <br>
-                    <h3>
-                    I'm a junior at Tufts University studying Cognitive and 
-                    Brain Science and Computer Science, previously a Marketing Technology
-                    Fellow at <a href='./concern.html'>Concern Worldwide USA</a>. 
-                    Driven by my passions for identity and community, I strive to 
-                    craft accessible and inclusive technology that is not only relevant to, 
-                    but reflective of the user. </h3>
-                    <br>
-                    <p class="lead fw-normal">
-                    Let's collaborate in 
-                    redefining and envisioning a multitude of new possibilities.
-                  </p>
+    <section id="section-1">
+      <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url('img/grid-paper.png');">
+        <div class="container d-flex justify-content-center align-items-center animation-container" style="min-height: 87vh;">
+          <div class="row align-items-center">
+            <!-- Left side -->
+            <div class="col-md-7 mx-auto my-4 text-start">
+              <img src="img/ERYNN-header.png" id="erynn-header" alt="ERYNN Header">
+
+              <h3>is an aspiring project manager interested in the relationship 
+                between tech and creativity in how it can uplift diverse voices,
+                spark human connection, and inspire social good through
+                <i>community</i> and <i>culture</i>.
+              </h3>
+              <br>
+              <div class="row">
+                <div class="col-md-4">
+                  <h4 class="fw-bold" style="margin-bottom: 2px;">currently</h4>
+                  <p>third-year cognitive & brain science + computer science student @ tufts</p>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="fw-bold" style="margin-bottom: 2px;">most recently</h4>
+                  <p>marketing technology fellow @ concern worldwide us</p>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="fw-bold" style="margin-bottom: 2px;">driven by</h4>
+                  <p>music, good coffee, and giving back to my community.</p>
                 </div>
               </div>
-        </section>
-        
+            </div>
+            <div class="col-md-5 d-none d-md-block">
+              <img src="img/ERYNN-polaroid.png" id="erynn-polaroid" alt="Erynn's Picture">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <!-- Projects -->
 <section>
-  <div class="position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center">
+  <div class="position-relative overflow-hidden p-4 p-md-5 m-md-5 text-center">
       <div class="row text-center">
-          <div class="col-md-12 mx-auto my-4 mx-2">
-              <div class="fw-normal text-center">
-                  <h2 class="header display-5" id="projects">MY PROJECTS</h2>
+          <div class="col-md-12 mx-auto my-4 mx-2 mb-4">
+              <div class="fw-normal text-center" id="projects">
+                  <h2 class="header display-5"><img src="img/projects-header.png" id="projects-png"></h2>
               </div>
           </div>
           <!-- concern -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-                      <img class="bg-img" src="img/concern-front2.png" alt="Concern Worldwide US">
-                      <div class="bg-img-overlay text-center">
-                      <h3 class="bg-img-title">
-                        <a href="./concern" class="header text-white text-decoration-none">READ MORE</a>
-                      </h3>
-                      </div>
-                </div>
-                <div class="info concern">
-                  <h2 class="header">CONCERN WORLDWIDE US</h2>
-                    <div class="container w-75">
-                    <p class="text-right">A triggered email campaign completed as a part of an eight week 
-                      fellowship as a Marketing Technology Fellow under Concern Worldwide US.</p>
-                    </div>
-                  <a class="btn btn-primary header" href="./concern" role="button">Read More</a>
-              </div>
-        </div>
-          <!-- second chance -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-              <img class="bg-img" src="img/second-chance-front.webp" alt="Second Chance">
-              <div class="bg-img-overlay text-center">
-              <h3 class="bg-img-title">
-                <a href="./second-chance" class="header text-white text-decoration-none">READ MORE</a>
-              </h3>
-              </div>
-            </div>
-            <div class="info second-chance">
-              <h2 class="header">SECOND CHANCE</h2>
-              <div class="container w-75">
-                <p class="text-right">A collection of high-fidelity prototypes
-                  developed for the UI of a conceptualized sustainability shopper
-                  and education web extension, <i>Second Chance</i>, created
-                  as a course-long group project for CS 171: Human-Computer Interaction.
-                </p>
-              </div>
-              <a class="btn btn-primary header" href="./second-chance" role="button">Read More</a>
+          <div class="col-md-6 my-4 mb-4 image-container hiddenon-load">
+            <div class="concern-img">
+                <a href="./concern"><img src="img/concern-prototype.png" id="concern-prototype" class="img-fluid d-block"></a>
             </div>
           </div>
-          <!-- fruity treasures -->
-          <div class="col-md-6 my-4">
-            <div class="bg-image container">
-                  <img class="bg-img" src="img/fruity-front.jpg" alt="Fruity Treasures">
-                  <div class="bg-img-overlay text-center">
-                  <h3 class="bg-img-title">
-                    <a href="./fruity-treasures" class="header text-white text-decoration-none">READ MORE</a>
-                  </h3>
-                  </div>
+          <div class="col-md-6 my-4 mb-4 hiddenon-load">
+            <div class="container text-start">
+              <a href="https://concernusa.org/" target="_blank"><img src="img/concern-logo.png" id="concern-logo"></a>
+              <a href="./concern"><h3 class="fst-italic fw-bold" id="concern-title">Strengthening donor relationships with a personal touch.</h3></a>
+              <p>A user-centered triggered email campaign that optimizes engagement from a diverse set of donors, empowering donors to turn their concern into action.</p>
+              <p class="project-details">EMAIL CREATION, CRM AUTOMATION & USER RESEARCH  |   NGO   |   INTERNSHIP</p>
             </div>
-            <div class="info fruity-treasures">
-              <h2 class="header">FRUITY TREASURES</h2>
-                <div class="container w-75">
-                <p class="text-right">A website developed for a conceptualized
-                  startup focused on expanding accessibility and
-                  diversity of fruit in e-commerce spaces, <i>Fruity Treasures</i>, created
-                  as a course-long group project for CS 20: Web Programming.
-                </p>
-                </div>
-              <a class="btn btn-primary header" href="./fruity-treasures" role="button">Read More</a>
+          </div>
+          
+          <!-- second chance -->
+          <div class="col-md-6 order-1 order-md-2 my-4 mb-4 image-container hiddenon-load">
+            <div class="sc-img">
+              <a href="./second-chance">
+                <img src="img/second-chance-proto.png" id="second-chance-prototype" class="img-fluid d-block">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 order-2 order-md-1 my-4 mb-4 hiddenon-load">
+            <div class="container text-start">
+              <img src="img/second-chance-logo.png" id="second-chance-logo" class="img-fluid d-block">
+              <a href="./second-chance"><h3 class="fst-italic fw-bold" id="sc-title">Empowering online shoppers to buy secondhand.</h3></a>
+              <p>A web extension that redirects online shoppers from clothing on fast fashion websites to similar options on secondhand thrift sites with the aim to shift consumers towards maintaining sustainable shopping habits.</p>
+              <p class="project-details">USER RESEARCH, USER TESTING & UX/UI DESIGN  |  CS170: HCI  |  GROUP PROJECT</p>
+            </div>
+          </div>
+
+          <!-- voting -->
+          <div class="col-md-6 my-4 mb-4 order-3 image-container hiddenon-load">
+            <div class="voting-img">
+              <a href="./voting">
+                <img src="img/voting-prototype.svg" id="voting-prototype" class="visible-image img-fluid" alt="Visible Image">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 my-4 mb-4 order-4 hiddenon-load">
+            <div class="container text-start">
+              <img src="img/Tufts University logo.png" id="tufts-logo" class="visible-image">
+              <a href="./voting"><h3 class="fst-italic fw-bold" id="voting-title">Helping Californians vote from the comfort of home.</h3></a>
+              <p>An online voting interface for the 2016 general election in California.</p>
+              <p class="project-details">UX/UI DESIGN, USER TESTING |  ENP166: COMPUTER INTERFACE DESIGN  |  GROUP PROJECT   </p>
+            </div>
           </div>
       </div>
   </div>
 </section>
+
+
 
     <!-- Scroll-to-top button -->
     <a class="scroll-to-top" id="scrollToTopBtn">
@@ -261,8 +410,9 @@
     </ul>
     <p class="text-center text-muted">
       <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">coded and designed by </a>
-      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./">ERYNN GUTIERREZ</a>
-       © 2023</p>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./"><img src="img/ERYNN-header.png" id="erynn-name" alt="ERYNN Header"></a>
+       © 2024
+    </p>
   </footer>
 </div>
 </body>
