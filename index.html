@@ -79,7 +79,7 @@
         width: auto;
       }
 
-      #concern-prototype, #second-chance-prototype, #fruity-treasures-prototype {
+      #concern-prototype, #second-chance-prototype, #fruity-treasures-prototype, #narrative-prototype {
         height: auto;
         max-width: 95%;
       }
@@ -107,6 +107,13 @@
         margin-bottom: 1em;
       }
 
+      #narrative-logo {
+        height:3em;
+        width: auto;
+        margin-bottom: 1em;
+        margin-left: -.5em;
+      }
+
       .image-container {
       position: relative;
       overflow: hidden;
@@ -116,7 +123,8 @@
 
     .voting-img,
     .concern-img,
-    .sc-img {
+    .sc-img,
+    .narrative-img {
       position: relative;
       width: 100%;
       height: 100%;
@@ -124,7 +132,8 @@
 
     .voting-img::before,
     .concern-img::before,
-    .sc-img::before {
+    .sc-img::before,
+    .narrative-img::before {
       content: '';
       position: absolute;
       top: 0;
@@ -150,11 +159,15 @@
     .concern-img::before {
       background-image: url('img/concern-wipe.png');
     }
-    
+
+    .narrative-img::before {
+      background-image: url('img/narrative-wipe.png');
+    }
 
     .voting-img:hover::before,
     .concern-img:hover::before,
-    .sc-img:hover::before {
+    .sc-img:hover::before,
+    .narrative-img:hover::before {
       width: 100%;
     }
 
@@ -189,6 +202,8 @@
     #concern-title:hover { color:#0B7B51; }
 
     #voting-title:hover { color:#18325F; }
+
+    #narrative-title:hover {color:#9E8A4A}
     
   </style>
 </head>
@@ -295,6 +310,23 @@
                   <h2 class="header display-5"><img src="img/projects-header.png" id="projects-png"></h2>
               </div>
           </div>
+
+          <!-- narrative -->
+          <div class="col-md-6 my-4 mb-4 hiddenon-load">
+            <div class="container text-start">
+              <a href="https://www.narrativebookshop.com/" target="_blank"><img src="img/narrative-logo.png" id="narrative-logo" class="img-fluid d-block"></a>
+              <a href="./narrative"><h3 class="fst-italic fw-bold" id="narrative-title">Boosting small business engagement and sales with paid media.</h3></a>
+              <p>A targeted, paid media strategy for local Somerville book store, Narrative Bookshop, focusing on increasing foot traffic, event attendance, and online sales through customized campaigns for local college students and New England supporters.</p>
+              <p class="project-details">MEDIA PLANNING & PAID MEDIA ADVERTISING |  GUPTA MEDIA   |  INTERNSHIP</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 order-3-md my-4 mb-4 image-container hiddenon-load">
+            <div class="narrative-img">
+              <a href="./narrative"><img src="img/narrative-proto.png" id="narrative-prototype" class="img-fluid d-block"></a>
+            </div>
+          </div>
+
           <!-- concern -->
           <div class="col-md-6 my-4 mb-4 image-container hiddenon-load">
             <div class="concern-img">
@@ -411,7 +443,7 @@
     <p class="text-center text-muted" id="footer-text">
       <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">coded and designed by </a>
       <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./"><img src="img/ERYNN-header.png" id="erynn-name" alt="ERYNN Header"></a>
-       © 2024
+       © 2025
     </p>
   </footer>
 </div>
