@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/external.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Federo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
+  <title>Narrative Bookshop | Erynn Gutierrez</title>
+  <link rel="icon" type="image/png" href="img/EKG.png"/>
+  <style>
+    .header {font-family: Federo;}
+
+    a {color:black;}
+
+    h5 { font-weight: bolder;}
+
+    .brief {
+      display: inline-block;
+    }
+
+    section {padding-bottom: 5em; }
+
+    #scrollspy {
+        position:fixed;
+        right:0;
+        text-align:right;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 576px) {
+      .this {
+        order: 1;
+      }
+
+      .that {
+        order: 2;
+        text-align: center;
+      }
+    }
+    @media (max-width: 758px) {
+
+      #scrollspy {
+        visibility:hidden;
+      }
+
+    }
+
+    .comp-img {
+      width: 75%;
+      height: auto;
+    }
+
+    #scrollspy {
+        font-size: 10pt;
+    }
+
+    .nav-link {color:black;}
+
+    .caption {font-size: 9pt;}
+
+    #links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+    a:hover {color:#9E8A4A !important;}
+
+    a {color:black;}
+
+    #audience-1-video {width: 50%}
+
+  </style>
+  <script>
+    lightbox.option({
+      'resizeDuration': 100
+    })
+  </script>
+</head>
+<body>
+<!-- Nav Bar goes here -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./"><img src="img/EKG.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./identity">Identity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./voice">Voice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pdf/Gutierrez.Erynn_Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./identity#connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Scrollspy -->
+  <div class="container whole">
+    <div class="row">
+      <div class="col-auto">
+        <div id="scrollspy">
+          <ul class="nav flex-column" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#business-context">Business Context</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Narrative</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hossains-vision">Hossain's Vision</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#organic-performance">Organic Performance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proposed-media-strategy">Proposed Media Strategy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#objectives">Objectives</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#audience-1">Audience 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#funnel-1">Funnel 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#meta">Meta Recommendation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community-space">Community Space Marketing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#event-marketing">Event Marketing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#audience-2">Audience 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#funnel-2">Funnel 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#book-marketing">Book Marketing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pinterest">Pinterest Recommendation</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" id="intro">
+        <section id="section-1">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3">
+              <div class="col-md-12 my-2">
+                  <div class="fw-normal">
+                      <h1 class="display-1 header">BRINGING THE NARRATIVE INTO PAID MEDIA</h1>
+                  </div>
+                  <h3 class="subheader fw-normal text-right">
+                    How can paid media campaigns drive local engagement and increase sales for a small business?
+                  </h3>
+              </div>
+            </br>
+            </br>
+            </br>
+  
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-md-1">
+                      <a href="img/narrative-proto.png" data-lightbox="narrative-proto" data-title="Narrative Prototype">
+                        <img src="img/narrative-proto.png" alt="narrative-prototype" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 that">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="text-end">
+                                    Elevating local small business growth by driving foot traffic, event attendance, 
+                                    and online sales through tailored Meta and Pinterest campaigns for local and out-of-state audiences with targeted content, event promotions, and community-driven storytelling.
+                                </p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ROLE</th>
+                                            <th scope="col">TEAM</th>
+                                            <th scope="col">SKILLS</th>
+                                            <th scope="col">TIME</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Media Intern</td>
+                                            <td>International Love</td>
+                                            <td>Media Planning<br>Ad Mocks<br>Audience Segmentation<br>Copywriting</td>
+                                            <td>4 Weeks</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </section>
+
+      <div class="row mx-auto" id="project-overview"></div>
+
+      <!-- Research and Ideation -->
+          <div class="row mx-auto" id="business-context"></div>
+              <h2 class="header text-center">BUSINESS CONTEXT</h2>
+              <section id="about">                    
+                <div class="col-9 text-start mx-auto">
+                      <h5 class="text-start" id="email-3">About Narrative</h5>
+                      <p>Narrative Bookshop is a local bookshop in Davis Square, Somerville, MA, that opened in May 2024.
+                        It is an immigrant-woman owned and operated business run by Mila Hossain. 
+                        The bookshop offers a welcoming space for finding connection through a curation of BIPOC authors and community-minded events.
+                        Narrative's offerings include books, their cozy community space, author signings, book talks, wellness events, craft nights, yoga classes, and more.</p>
+                      </div>
+              </section>
+                <section id="hossains-vision">
+                <div class="col-9 text-start mx-auto">
+                <h5>Hossain's Vision</h5>
+                <p>
+                    Through Narrative Bookshop, Hossain aims to create an inclusive environment where everyone feels welcome to explore new ideas and perspectives. She envisions Narrative not just as a book shop, but as a hub for discovery, through her curation that empowers voices that have traditionally been marginalized in mainstream literature.
+                </p>
+                <a href="img/narrative-summary.png" data-lightbox="Narrative Summary" data-title="From left to right: @bookforthree, Boston.com, @ilse.rzvphoto">
+                    <img src="img/narrative-summary.png" alt="narrative-summary" class="img-fluid">
+                </a>
+                <p class="caption">Hossain's vision for Narrative is deeply rooted in her personal journey as an immigrant and her passion for literature.</p>
+                <p>
+                    Hossain's journey has not been easy; she has navigated the challenges of establishing a business while managing all aspects of operations, from running the store to organizing events and engaging with customers on social media. By focusing on community-minded events and thoughtful curation, Hossain seeks to inspire a love for reading while supporting local authors and fostering connections among residents in Somerville and beyond. Her vision is clear: Narrative Bookshop is a place where stories come alive, and every visitor can find their narrative.
+                </p>
+              </div>
+                </section>
+            <!-- Digital Platforms and Organic Overview -->
+            <section id="organic-performance">
+                <div class="row">
+                    <div class="col-9 text-start mx-auto">
+                    <h5>Organic Performance</h5>
+
+                    <p>Currently, Narrative does not run any paid media. On the social side, Narrative is active on Instagram and Facebook. In their own website, Bookshop.org for online sales, and Eventbrite for ticket sales.</p>
+
+                    <a href="img/narrative-platforms.png" data-lightbox="Narrative Platforms" data-title="Narrative's Digital Platforms">
+                        <img src="img/narrative-platforms.png" alt="narrative-platforms" class="img-fluid">
+                    </a>
+                    <br><br>
+
+                    <p>
+                        On the organic side, Narrative is performing extremely well, particularly on Instagram. Hossain, who has shared deeply personal stories of what it's like being a first-time small business owner, has
+                        developed a strong base of dedicated followers who actively engage with her content. Since the account's beginnings in December 2023, @narrativebookshop has amassed over 5.8k followers (as of
+                        January 2025). 
+                    </p>
+
+                    <a href="img/narrative-organic-overview.png" data-lightbox="Narrative Organic Overview" data-title="Narrative's Organic Overview: Instagram">
+                        <img src="img/narrative-organic-overview.png" alt="narrative-organic-overview" class="img-fluid">
+                    </a>
+
+                    <br><br>
+
+                    <p>
+                        Pictured above on the top are examples of Narrative's most sucessful content: the left-most post, which merely announced the opening of the store, gained 763 likes and 63 comments.
+                        Comments of encouragement, admiration, and excitement, like that of the screengrabs on the bottom, which populate every single other post of @narrativebookshop.
+                    </p>
+
+                    <p>
+                      With such high organic performance and engagement, Narrative has high potential for launching a paid media plan.
+                    </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="header text-center" id="proposed-media-strategy">PROPOSED MEDIA STRATEGY</h2>
+            <section id="objectives">
+                <div class="container">
+                    <div class="col-9 text-start mx-auto">
+                        <h5 class="mx-auto">Objectives</h5>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item"><strong>Increase in-store foot traffic</strong> by promoting Narrative's community space and events to local Somerville, Cambridge, and Boston targets.</li>
+                            <li class="list-group-item"><strong>Boost online sales</strong> by expanding Narrative’s online presence and drive conversions on their Bookshop.org page by targeting outside the Boston area.</li>
+                          </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audience 1: College and Graduate Students -->
+            <section id="audience-1">
+                <div class="container">
+                    <div class="col-9 text-start mx-auto">
+                        <h5 class="mx-auto">Audience 1: College and Graduate Students</h5>
+                        <p>
+                        There are 162,981 students enrolled in Boston institutions,
+                        with 59% in undergraduate programs and 41% in programs beyond a 
+                        bachelor’s degree (<em>Student Housing Trends: 2023</em>, City of Boston).
+                        </p>
+
+                        <p>
+                        Whether they're looking for looking for a welcoming community space,
+                        a new book to read, or a break from campus, students
+                        are the perfect audience to encourage visiting a place like Narrative;
+                        accomplishing the goal of increasing in-store foot traffic.
+                        Below are targets specific to this local audience on
+                        Meta.
+                        </p>
+
+                        <a href="img/schools.png" data-lightbox="Schools" data-title="Schools in the Cambridge/Somerville area">
+                            <img src="img/schools.png" alt=schools" class="img-fluid">
+                        </a>
+
+                        <br><br>
+
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row">Age</th>
+                                <td>18-26</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Geotargeting</th>
+                                <td>Cambridge, Somerville, and Boston areas</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Interest Targeting</th>
+                                <td><u>Universities</u>: Tufts, Harvard, Lesley, MIT, Northeastern, BU <br>
+                                    <u>Hobbies/Lifestyle</u>: Coffee shops, Arts & crafts, Book discussion <br>
+                                    <u>Cultural Events</u>: Arts & culture, Music festivals, Film festivals <br>
+                                    <u>Literature</u>: Poetry reading, American/Tamil/World/… literature <br>
+                                    <u>Social Justice</u>: Activism, Community and social service
+                                    </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div class="container">
+                            <br><br>
+                            <div class="row">
+                            <h5 id="funnel-1">Funnel: College and Graduate Students</h5>
+                                <div class="col-md-6 my-4 mb-4 d-flex align-items-center">
+                                    <a href="img/funnel-1.png" data-lightbox="Funnel for Local Audience" data-title="Funnel for Local Audience">
+                                        <img src="img/funnel-1.png" alt=funnel for local audience" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 my-4 mb-4">
+                                    <div class="awareness">
+                                        <h5>Awareness</h5>
+                                        <p>Students in Camberville/Boston interested in literature, social justice, cultural events</p>
+                                        <p>Lookalikes of Narrative’s Website Visitors</p>
+                                        <p>Lookalikes of Engagers of Narrative’s platforms</p>
+                                    </div>
+                                    <div class="consideration">
+                                        <h5>Consideration</h5>
+                                        <p>Followers of Narrative’s platforms</p>
+                                        <p>Engagers of Awareness targeting</p>
+                                    </div>
+                                </div>
+                                <p>In the funnel, local student outreach follows a strategic two-stage approach.</p>
+                                    
+                                <p>For awareness, the goal is to introduce Narrative to potential customers. By targeting local students interested in literature, social justice, and cultural events, the campaign expands brand visibility. 
+                                    Leveraging lookalike audiences based on website visitors and social media engagers helps discover new potential customers with similar characteristics.
+                                </p>
+                                <p>
+                                    The consideration stage builds on initial awareness, focusing on deepening engagement. By targeting current followers of Narrative's platforms and individuals who interacted with awareness-stage content, the campaign nurtures interest and moves potential customers closer to visiting the store or attending events.
+                                </p>
+                                <p>
+                                    This funnel approach systematically guides local students from initial brand discovery to active consideration, creating a structured pathway to increase foot traffic and community engagement.
+                                </p>
+                            </div>
+                          </div>
+                          <br><br>
+                        <h5 class="mx-auto" id="meta">Platform Recommendation: Meta</h5>
+                        <p>
+                          <strong>Why?</strong>
+                          Meta's integrated ecosystem allows for cross-promotion between Facebook and Instagram, maximizing reach and engagement.
+                        </p>
+                        <p>
+                          For reach, the goal is to show your ads to the maximum number of unique users within your target audience. 
+                          Meta's <u>Awareness campaigns</u> optimize for reach by ensuring your message is seen by as many distinct individuals as possible,
+                          with features like the store location feature, which will be detailed below.
+                        </p>
+                        
+                        <p>
+                          For engagement, the goal is to maximize the number of people 
+                          who have shown interest to engage in a certain action.
+                          For the goal of engaging more people to Narrative's events,
+                          Meta's <u>Engagement campaigns</u> will optimize for
+                          the maximum amount of people to indicate interest in
+                          or intention to attend your Facebook event.
+                        </p>
+
+                        <div class="container">
+                          <br><br>
+                          <h5 id="community-space">Community Space Marketing</h5>
+                          <div class="row">
+                              <div class="col-md-6 d-flex align-items-center">
+                                  <p>
+                                    <strong>Organic Copy:</strong> <br>
+                                    ✨ much better ✨<br>
+                                    As BEYOND GRATEFUL as I am (& tbh, still in shock & disbelief) that y'all cleared Narrative's shelves in SEVEN DAYS ❗❗❗, she just looks so GOOD all dressed & ready 🥰 <br>
+                                    Come get your books while they're still hereeeee <333333 <br>
+                                    #reels #bookstagram #indiebookstore #smallbusiness #womanowned
+                                  </p>
+                              </div>
+
+                              <div class="col-md-6 my-4 mb-4 d-flex justify-content-center align-items-center">
+                                <video class="w-50" controls>
+                                  <source src="mp4/audience-1-organic-1.mp4" type="video/mp4" />
+                                </video>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                            <p>
+                              Shown above is an example of current organic content
+                              that showcases Narrative's community space. Though
+                              the call to action (CTA) to visit the newly stocked shop
+                              is communicated, it's not as clear with the lack
+                              of text on the creative, as well as with the buried
+                              CTA in the copy.
+                            </p>
+                          </div>
+
+                          <h5>Paid Lens: Reel/Story Mocks</h5>
+                          <div class="row">
+                            <div class="col-md-4 my-4 mb-4 d-flex align-items-center">
+                              <video class="w-100" controls>
+                                <source src="mp4/audience-1-reel.mp4" type="video/mp4" />
+                              </video>
+                            </div>
+
+                            <div class="col-md-4 d-flex align-items-center">
+                              <video class="w-100" controls>
+                                <source src="mp4/audience-1-story.mp4" type="video/mp4" />
+                              </video>
+                            </div>
+                            <div class="col-md-4 d-flex align-items-center">
+                              <a href="img/narrative-get-directions.png" data-lightbox="Narrative Redirect">
+                                <img src="img/narrative-get-directions.png" alt="narrative-redirect" class="img-fluid">
+                              </a>
+                          </div>
+
+                          <div class="row">
+                            <p>
+                              Above, the leftmost video is a long-form Instagram reel
+                              that showcases not just Narrative's community space,
+                              but goes in depth to Narrative's mission, curation,
+                              and offerings as a Somerville's newest community
+                              addition.
+                            </p>
+                            <p>
+                              To the right is a short-form Instagram story that utilizes
+                              text, "there's a new immigrant + woman-owned bookstore
+                              in Somerville," and music to grab user attention within seconds,
+                              given the limited time of a story. 
+                            </p>
+                            <p>
+                              Both of these formats are under the Meta Awareness
+                              campaign, which allows for the Store Locator feature.
+                              This special feature introduces a new CTA, "Get Directions,"
+                              which prompts users to open their desired Maps app
+                              to get directions to Narrative from their location,
+                              as shown on the right.
+                            </p>
+                          </div>
+                        </div>
+                      
+                        <div class="container">
+                          <br><br>
+                          <h5 id="event-marketing">Event Marketing</h5>
+                            
+                            <a href="img/narrative-organic-event-1.png" data-lightbox="Narrative Organic Event">
+                              <img src="img/narrative-organic-event-1.png" alt="narrative-organic-event-marketing" class="img-fluid">
+                            </a>
+                            
+                            <br><br>
+
+                            <p>
+                              Above is an example of current organic content
+                              for an upcoming Narrative event. Again, the CTA to 
+                              register and buy tickets for the event is buried 
+                              among the extremely long copy.
+                            </p>
+                            
+                        
+
+                          <h5>Paid Lens: Facebook Feed Mock</h5>
+                          <div class="row">
+                            <div class="col-md-6 my-4 mb-4 d-flex justify-content-center align-items-center">
+                              <a href="img/narrative-event-mock-feed.png" data-lightbox="Narrative Organic Event">
+                                <img src="img/narrative-event-mock-feed.png" alt="narrative-organic-event-marketing" class="img-fluid w-75">
+                              </a>
+                            </div>
+
+                            <div class="col-md-6 my-4 mb-4 d-flex justify-content-center align-items-center">
+                              <a href="img/narrative-event-mock.png" data-lightbox="Narrative Organic Event">
+                                <img src="img/narrative-event-mock.png" alt="narrative-organic-event-marketing" class="img-fluid w-75">
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <p>
+                              Above, the mock on the left is a Facebook feed
+                              ad with reduced copy that grabs attention with a
+                              clear and short CTA. The star of this ad format,
+                              as in the use of Meta Awareness campaign, is the
+                              Facebook Events feature that allows us to track
+                              metrics like "Interested" and "Going" clicks, and
+                              event link clicks to the Facebook event page from
+                              the ad, which is shown on the right. 
+                            </p>
+                            <p>
+                              We are also able to track ticket sales on Eventbrite
+                              that came from engagers on Facebook, by
+                              utilizing a pixel (tracking link) that Narrative will
+                              provide on their end.
+                            </p>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="audience-2">
+              <div class="container">
+                  <div class="col-9 text-start mx-auto">
+                    <h5 class="mx-auto">Audience 2: “Buy Local” Supporters</h5>
+                        <p>
+                          Targeting the Massachusetts/New England audience for Narrative Bookshop's "Buy Local Supporters" campaign is a strategic choice that aligns well with the store's mission and local business ethos.
+                          New England has a strong culture of supporting independent businesses, as evidenced by initiatives like Small Business Strong, which has served over 3,600 businesses and preserved nearly 10,000 jobs in the region.
+                          This demonstrates a robust ecosystem of local business support.
+                        </p>
+                        
+                        <div class="container d-flex justify-content-center"
+                          <a href="img/narrative-support-local.png" data-lightbox="narrative-support-local"">
+                            <img src="img/narrative-support-local.png" alt=narrative-support-local" class="img-fluid w-25">
+                          </a>
+                        </div>
+                        <br>
+                        <p>
+                          By focusing on the Massachusetts/New England audience, Narrative Bookshop can tap into regional pride and the established "buy local" mentality. This approach resonates more authentically with the concept of supporting a Somerville-based small business, compared to targeting distant cities like LA or Chicago. Below are targets specific to this local audience on Meta.
+                        </p>
+                        <br><br>
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="row">Age</th>
+                                <td>18-60</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Geotargeting</th>
+                                <td>Broader Massachusetts, New England</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Interest Targeting</th>
+                                <td>
+                                    <u>Online Book Communities</u>: Book clubs, Book reviews, Fan fiction<br>
+                                    <u>Local Businesses</u>: Small business, Community issues<br>
+                                    <u>Literature</u>: Poetry reading, American/Tamil/World/… literature <br>
+                                    <u>Social Justice</u>: Activism, Community and social service
+                                    </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="container">
+                            <br><br>
+                            <div class="row">
+                            <h5 id="funnel-2">Funnel: “Buy Local” Supporters</h5>
+                                <div class="col-md-6 my-4 mb-4 d-flex align-items-center">
+                                    <a href="img/funnel-2.png" data-lightbox="Funnel for Out-of-State Audience" data-title="Funnel for Out-of-State Audience">
+                                        <img src="img/funnel-2.png" alt=Funnel for Out-of-State Audience" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 my-4 mb-4">
+                                    <div class="awareness">
+                                        <h5>Conversion</h5>
+                                        <p>Buy Local Supporters outside of Boston interested in literature, social justice, cultural events</p>
+                                        <p>Lookalikes of Purchasers</p>
+                                    </div>
+                                </div>
+                                <p>
+                                At this stage, local supporters are primed for action, needing only the right incentive or compelling message to make a purchase and support Narrative Bookshop, even from afar.
+                                </p>
+                                <p>
+                                  Buy Local Supporters outside of Boston are part of the conversion stage of the funnel because they have already demonstrated an interest in supporting independent businesses and are likely familiar with the concept of buying local.
+                                </p>
+                                <p>
+                                  These individuals, particularly those interested in literature, social justice, and cultural events, align closely with Narrative Bookshop's mission and offerings. By targeting lookalikes of previous purchasers, the campaign reaches people with similar characteristics to those who have already converted, increasing the likelihood of sales.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="container">
+                            <br><br>
+                            <h5 id="book-marketing">Book Marketing</h5>
+                            <div class="container text-center">
+                              <a href="img/narrative-organic-2.jpg" data-lightbox="Narrative Organic Event">
+                                <img src="img/narrative-organic-2.jpg" alt="narrative-organic-event-marketing" class="img-fluid w-50">
+                              </a>
+                            </div>
+                            
+                            <p>
+                              Above is an example of current organic content
+                              for a fall book sale at Narrative. However, one important
+                              question arises as I look at this post: 
+                              <strong>what books are actually on sale?</strong>
+                            </p>
+
+                            <h5>Paid Lens: Facebook Feed Mock</h5>
+                            <div class="row">
+                              <div class="col-md-8 my-4 mb-4 d-flex justify-content-center align-items-center">
+                                <a href="img/narrative-book-mock-2.png" data-lightbox="Narrative Book Marketing Mock">
+                                  <img src="img/narrative-book-mock-2.png" alt="narrative-book-marketing-mock" class="img-fluid w-100">
+                                </a>
+                              </div>
+  
+                              <div class="col-md-4 my-4 mb-4 d-flex justify-content-center align-items-center">
+                                <a href="img/narrative-book-redirect.png" data-lightbox="Narrative Book Mock Redirect">
+                                  <img src="img/narrative-book-redirect.png" alt="narrative-book-mock-redirect" class="img-fluid w-75">
+                                </a>
+                              </div>
+                            </div>
+  
+                            <div class="row">
+                              <p>
+                                Above, the mock on the left is a Facebook feed
+                                ad that brings books back into the narrative. 
+                                Starting off with a clearer CTA that defines the sale as
+                                a curated selection, this mock ties loose ends with
+                                its carousel format, which showcases the 3 top-selling
+                                books of the week that are included in the fall sale.
+                              </p>
+                              <p>
+                                Whenever users click the Shop Now button,
+                                they are redirected to Narrative's Bookshop.org page as shown on
+                                the right, where users are able to purchase the book of their choosing.
+                                Again, we are able to track book sales on Bookshop.org
+                                via a pixel provided by Narrative.
+                              </p>
+                            </div>
+                            
+                          </div>
+
+                          <h5 class="mx-auto" id="pinterest">Platform Recommendation: Pinterest</h5>
+                          <p>
+                            <strong>Why?</strong>
+                            Users engage with Pinterest content three times slower than on other platforms, allowing for deeper connections and more thoughtful consideration of products and services. This slower pace of engagement provides an opportunity for businesses to showcase their offerings in detail and build stronger relationships with potential customers.
+                          </p>
+
+                          <p>
+                            Pinterest functions more like a search engine than a traditional social media platform, effectively combining the intent-driven nature of Google with the visual appeal of Instagram. This hybrid approach makes it particularly effective for reaching users who are actively searching for inspiration, ideas, and products with the intention to take action.
+                          </p>
+                          
+                          <p>
+                            To optimize for conversion on Pinterest, leverage features Product Pins and the Shop Tab,
+                            which are explained in further detail below.  
+                          </p>
+
+                          <h5>Paid Lens: Pinterest Mocks</h5>
+                          <div class="row">
+                            <div class="col-md-4 my-4 mb-4 d-flex align-items-center">
+                              <a href="img/narrative-shop.png" data-lightbox="Narrative Redirect">
+                                <img src="img/narrative-shop.png" alt="narrative-redirect" class="img-fluid w-75">
+                              </a>
+                            </div>
+
+                            <div class="col-md-4 d-flex align-items-center">
+                              <a href="img/narrative-pin.png" data-lightbox="Narrative Redirect">
+                                <img src="img/narrative-pin.png" alt="narrative-redirect" class="img-fluid w-75">
+                              </a>
+
+                            </div>
+                            <div class="col-md-4 d-flex align-items-center">
+                              <a href="img/narrative-book-redirect.png" data-lightbox="Narrative Book Mock Redirect">
+                                  <img src="img/narrative-book-redirect.png" alt="narrative-book-mock-redirect" class="img-fluid w-75">
+                                </a>
+                          </div>
+
+                          <div class="row">
+                            <p>
+                              Above, the leftmost mock is the Shop Tab: a dedicated
+                              space for browsing Product Pins, this feature 
+                              further enhances the shopping experience. 
+                              It allows users to search for specific items 
+                              and filter results by price and brand, increasing 
+                              the likelihood of conversion. 
+
+                            </p>
+                            <p>
+                              Product Pins provide rich details about items, 
+                              including pricing and availability, making it easier
+                               for users to make purchase decisions. A cool plus
+                               about these pins is that all of its text, including
+                               the text on the literal pin, are included in Pinterest's
+                               SEO keywords. If you wanted to go the extra mile,
+                               adding text on the creative can boost the power of
+                               the ad.
+                            </p>
+                            <p>
+                              Again, once a user wants to buy the book, they'll
+                              be redirected to Narrative's Bookshop.org page,
+                              which can be tracked via pixel.
+                            </p>
+                          </div>
+                  </div>
+              </div>
+            </section>
+</div>
+
+
+    <!-- Scroll-to-top button -->
+  <a class="scroll-to-top" id="scrollToTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </a>
+
+    <!-- Scroll-to-homepage button -->
+    <a href="./#projects" style= "text-decoration: none; color:black;" class="scroll-to-homepage" id="scrollToHomepageBtn">
+      <i class="bi bi-arrow-left-short" width="25" height="25"></i>Back to My Projects
+    </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      // Show or hide the scroll-to-top button based on scroll position
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      var scrollToHomepageBtn = document.getElementById('scrollToHomepageBtn');
+
+      if (window.scrollY > document.getElementById('section-1').offsetHeight) {
+        scrollToTopBtn.classList.add('active');
+        scrollToHomepageBtn.classList.add('active');
+      } else {
+        scrollToTopBtn.classList.remove('active');
+        scrollToHomepageBtn.classList.remove('active');
+      }
+    });
+
+    // Scroll smoothly to the top of the page when the button is clicked
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    </script>
+
+
+
+<!-- Footer goes here -->
+<div class="footer container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="./identity#connect" class="nav-link px-2 text-muted">Connect</a></li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/erynn-gutierrez/" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/Erynn-Gutierrez" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="mailto:Erynn.Gutierrez@tufts.edu" target="_blank" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-open-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 7.384v5.733l3.479-2.087c.15.275.335.553.558.83l-4.002 2.402A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738l-4.002-2.401c.223-.278.408-.556.558-.831L15 13.117V7.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM7.06.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="text-center text-muted" id="footer-text">
+      <a style="color:#595C5D; text-decoration:solid;" href="https://github.com/Erynn-Gutierrez/portfolio" target="_blank">coded and designed by </a>
+      <a id="footer-home" style="color:black; text-decoration:solid; font-weight: bold; font-size: 15pt;" href="./"><img src="img/ERYNN-header.png" id="erynn-name" alt="ERYNN Header"></a>
+       © 2025
+    </p>
+      </footer>
+
+</div>
+<script src="js/lightbox.js"></script>
+</body>
+</html>
