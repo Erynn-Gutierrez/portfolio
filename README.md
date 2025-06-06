@@ -1,11 +1,9 @@
 <h1 align="center">Hi 👋, I'm Erynn</h1>
-<h3 align="center">CBS and CS Student at Tufts University</h3>
+<!-- <h3 align="center">CBS and CS Student at Tufts University</h3> -->
 
 - 🌱 I’m currently learning **Bootstrap 5**
 
-- 🤝 I’m looking for help with **UX/UI Research and Design**
-
-- 📫 How to reach me **Erynn.Gutierrez@tufts.edu**
+- 📫 How to reach me **erynnkayley@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
