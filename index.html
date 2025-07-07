@@ -15,8 +15,18 @@
           display: inline;
       }
 
+      #background {
+        background-image: url('img/grid-paper.png');
+        background-size: cover;
+        background-position: center;
+      }
+
       #section-1 > div {
-          height: 87vh;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
       }
   
       div.bg-image.container {
@@ -61,13 +71,18 @@
       }
 
       #erynn-header {
-          height: 13em;
-          width: auto;
+        max-width: 100%;
+        height: auto;
       }
 
-       #erynn-polaroid {
-          width: 30em;
-          height: auto;
+      #erynn-polaroid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      p {
+        font-size: calc(0.9rem + 0.3vw);
+        line-height: 1.6;
       }
       
       .table.table-borderless {
@@ -204,7 +219,33 @@
     #voting-title:hover { color:#18325F; }
 
     #narrative-title:hover {color:#9E8A4A}
-    
+
+    @media (max-width: 768px) {
+      .col-md-7,
+      .col-md-5 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .col-md-5 img {
+        margin-top: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -265,31 +306,32 @@
     <main>
     <!-- About Snippet -->
     <section id="section-1">
-      <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url('img/grid-paper.png');">
+      <div class="position-relative overflow-hidden text-center bg-light" id="background">
         <div class="container d-flex justify-content-center align-items-center animation-container" style="min-height: 87vh;">
           <div class="row align-items-center">
             <!-- Left side -->
             <div class="col-md-7 mx-auto my-4 text-start">
               <img src="img/ERYNN-header.png" id="erynn-header" alt="ERYNN Header">
 
-              <h3>is an aspiring account executive interested in the relationship 
-                between tech and creativity. How can these two forces come together to 
-                uplift diverse voices, spark human connection, and inspire social good? 
-                With the power of <i>community</i> and <i>culture</i>.
+              <h3>
+                <strong>discovers hidden opportunities others miss—and can't help connecting them to the people who need them most</strong>.
               </h3>
+
+              <h4> As an <i>aspiring account executive</i>, she channels this instinct into building bridges between clients, teams, and audiences to create campaigns that connect and amplify diverse voices.</h4>
+
               <br>
               <div class="row">
                 <div class="col-md-4">
                   <h4 class="fw-bold" style="margin-bottom: 2px;">currently</h4>
-                  <p>an account management intern at Ogilvy NY.</p>
+                  <p>an account management intern at <a href="https://www.ogilvy.com/" target="_blank">ogilvy ny</a>.
                 </div>
                 <div class="col-md-4">
                   <h4 class="fw-bold" style="margin-bottom: 2px;">most recently</h4>
-                  <p>a cognitive & brain science student at Tufts.</p>
+                  <p>a cognitive & brain science student at <a href="https://www.tufts.edu/" target="_blank">tufts</a>.</p>
                 </div>
                 <div class="col-md-4">
                   <h4 class="fw-bold" style="margin-bottom: 2px;">driven by</h4>
-                  <p>music, good coffee, and giving back to my community.</p>
+                  <p>good coffee, iterative excellence, and giving back to her community.</p>
                 </div>
               </div>
             </div>
