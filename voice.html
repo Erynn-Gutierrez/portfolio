@@ -52,6 +52,55 @@
 
   a { color: black; }
 
+   .navbar-brand {
+        display: block;
+        width: 100px;  /* same as your image dimensions */
+        height: 100px;
+        background: url("img/EKG.png") no-repeat center / contain;
+      }
+
+      .navbar-brand:hover {
+        background-image: url("gif/EKG.gif");
+      }
+    
+    #my-voice:hover {
+      content: url("gif/my-voice-gif.gif");
+    }
+
+    #writing-samples img {
+      display: block;
+      margin: 0 auto; /* centers image */
+      max-width: 73%; /* adjust size as needed */
+      height: auto;
+      margin-top: 1em;
+    }
+
+    #writing-samples img.static {
+      content: url("img/writing-samples.png");
+      margin-top: 1em;
+    }
+
+    #writing-samples:hover img.static {
+      content: url("gif/writing-sample-gif.gif");
+      max-width: 73%; /* keep gif same size */
+      height: auto;
+    }
+
+    #writing-samples-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* all children are centered under writing-samples.png */
+    }
+
+    .writing-sample img {
+        max-width: 90%; /* adjust as needed */
+        height: auto;
+    }
+
+    .writing-sample {
+      margin-bottom: -4.5em;
+    }
+
     </style>
 </head>
 <body>
@@ -59,7 +108,7 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./"><img src="img/EKG.png"></a>
+          <a class="navbar-brand" href="./"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -90,7 +139,9 @@
       <div class="container d-flex justify-content-center align-items-center animation-container px-5">
         <div class="col-md-12 mx-auto my-4">
           <div class="fw-normal text-start">
-            <h2 class="header display-5"><img src="img/my-voice-header.svg" id="voice-svg"></h2>
+            <div id="my-voice">
+                <img src="img/my-voice-header.svg" class="static" alt="My Voice">
+            </div>
           </div>
           <div class="row">
             <div class="col-md-7 my-4 mb-4 d-flex align-items-center order-md-first order-2">
@@ -164,7 +215,8 @@
               </div>
             </div>
           </div>
-          
+
+            
           <div class="row">
             <div class="col-md-12 my-4 mb-4" id="writing">
               <div class="fw-normal text-start">
@@ -173,26 +225,35 @@
                 </h3>
                 </div>
             </div>
+              <div class="fw-normal text-center">
+                <h2 class="header display-5">
+                  <div id="writing-samples">
+                      <img src="img/writing-samples.png" class="static" alt="Writing Samples">
+                  </div>
+                </h2>
+              </div>
           </div>
 
-        <div class="row">
-            <div class="col-md-12 my-4 mb-4">
-              <a href="https://heyzine.com/flip-book/7db9281755.html#page/1" target="_blank"><img src="img/salo.png" class="img-fluid" id="salo"></a>
-            </div>
-          </div>
-
-        <div class="row">
-            <div class="col-md-12 my-4 mb-4">
-              <a href="https://erynnincope.wordpress.com/" target="_blank"><img src="img/soundbites.png" class="img-fluid" id="soundbite"></a>
-            </div>
-          </div>
-
-          <div class="row" id="beat-div">
-            <div class="col-md-12 my-4 mb-4">
-              <a href="pdf/To the Beat of Her Drum.pdf" target="_blank"><img src="img/beat.png" class="img-fluid" id="beat"></a>
-            </div>
-          </div>
-
+        <div class="text-center" id="writing-samples-container">
+            <div class="row writing-sample">
+                <div class="col-md-12 my-4 mb-4">
+                  <a href="https://heyzine.com/flip-book/7db9281755.html#page/1" target="_blank"><img src="img/salo.png" class="img-fluid" id="salo"></a>
+                </div>
+              </div>
+    
+            <div class="row writing-sample">
+                <div class="col-md-12 my-4 mb-4">
+                  <a href="https://erynnincope.wordpress.com/" target="_blank"><img src="img/soundbites.png" class="img-fluid" id="soundbite"></a>
+                </div>
+              </div>
+    
+              <div class="row writing-sample" id="beat-div">
+                <div class="col-md-12 my-4 mb-4">
+                  <a href="pdf/To the Beat of Her Drum.pdf" target="_blank"><img src="img/beat.png" class="img-fluid" id="beat"></a>
+                </div>
+              </div>
+        </div>
+            
         </div>
       </div>
     </div>
@@ -225,7 +286,18 @@
           behavior: 'smooth'
         });
       });
-  
+
+      const gifsToPreload = [
+        "gif/EKG.gif",
+        "gif/writing-sample-gif.gif",
+        "gif/my-voice-gif.gif"
+      ];
+
+      gifsToPreload.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+        
       </script>  
 
 </main>
